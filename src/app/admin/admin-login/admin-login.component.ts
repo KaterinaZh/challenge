@@ -45,7 +45,12 @@ export class AdminLoginComponent implements OnInit {
         this.redirectToAdminConsole();
       },
       error: error => {
-        this.error = error.error.message;
+        if (error.error && error.error.message) {
+          this.error = error.error.message;
+        } else {
+          this.error = 'Error';
+          console.error(error);
+        }
         this.loading = false;
       }
     });

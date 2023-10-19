@@ -18,3 +18,14 @@
   src: url("/assets/fonts/Segoe UI Bold.ttf");
   font-weight: bold;
 }
+
+.btn-primary, .btn-primary:hover {
+  background-color: #1CADE4;
+  border: 0;
+}
+
+.btn-secondary, .btn-secondary:hover {
+  background-color: #fff;
+  border: 1px solid #1CADE4;
+  color: #1CADE4;
+}

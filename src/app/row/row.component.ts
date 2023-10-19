@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {LeaderboardService} from "../services/leaderboard.service";
 import {Run, Task, TaskList} from "../models/task.model";
 import {User} from "../models/user.model";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-row',
@@ -20,7 +21,8 @@ export class RowComponent implements OnInit {
   public usersCount: number = 0;
   public sliceEnd: number = 10;
 
-  constructor(public leaderboardService: LeaderboardService) {
+  constructor(private leaderboardService: LeaderboardService,
+              private router: Router) {
   }
 
   ngOnInit() {
@@ -32,6 +34,10 @@ export class RowComponent implements OnInit {
       }
     });
     this.leaderboardService.getUsers().subscribe((res: User[]) => this.allUsers = res);
+  }
+
+  public goToAdmin() {
+    this.router.navigate(['/admin-login']);
   }
 
   public changeRun(run: Run) {

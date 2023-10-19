@@ -1,6 +1,11 @@
 <div class="container-fluid">
 
   <app-loader *ngIf="isLoading"></app-loader>
+  <div class="admin-panel row">
+    <div class="col">
+      <button type="button" class="btn btn-secondary float-end" (click)="goToAdmin()">Admin console</button>
+    </div>
+  </div>
 
   <div *ngIf="currentRun" class="panel">
     <div class="row">

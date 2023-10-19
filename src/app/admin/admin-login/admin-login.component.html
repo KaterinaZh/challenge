@@ -1,0 +1,36 @@
+<div class="d-flex min-vh-100 justify-content-center align-items-center">
+  <div class="card col-4">
+    <h4 class="card-header">Login</h4>
+    <div class="card-body">
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+          <label class="form-label">Username</label>
+          <input type="text" formControlName="username" class="form-control"
+                 [ngClass]="{'is-invalid': form.controls['username'].dirty && form.controls['username'].errors }"/>
+          <div *ngIf="form.controls['username'].errors" class="invalid-feedback">
+            <span *ngIf="form.controls['username'].errors?.['required']">Username is required</span>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Password</label>
+          <input type="password" formControlName="password" class="form-control"
+                 [ngClass]="{'is-invalid': form.controls['password'].dirty && form.controls['password'].errors }"/>
+          <div *ngIf="form.controls['password'].errors" class="invalid-feedback">
+            <span *ngIf="form.controls['password'].errors?.['required']">Password is required</span>
+          </div>
+        </div>
+        <div>
+          <button [disabled]="loading" class="btn btn-primary">
+            <span *ngIf="loading" class="spinner-border spinner-border-sm me-1"></span>
+            Login
+          </button>
+          <button type="button" class="btn btn-secondary ms-2" (click)="back()">Back</button>
+          <div *ngIf="error">
+            <div class="is-invalid"></div>
+            <span class="invalid-feedback">{{error}}</span>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

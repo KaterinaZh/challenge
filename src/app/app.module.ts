@@ -12,6 +12,7 @@ import { LoaderComponent } from './loader/loader.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
 import { AdminLoginComponent } from './admin/admin-login/admin-login.component';
 import { AdminConsoleComponent } from './admin/admin-console/admin-console.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { AdminConsoleComponent } from './admin/admin-console/admin-console.compo
     LoaderComponent,
     DropdownComponent,
     AdminLoginComponent,
-    AdminConsoleComponent
+    AdminConsoleComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

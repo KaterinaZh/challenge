@@ -17,11 +17,6 @@ export class UserService {
   }
 
   register(data: RegisterData) {
-    return this.http.post('/api/register', {
-      first_name: data.firstName,
-      last_name: data.lastName,
-      codewars_username: data.codewarsUsername,
-      telescope_link: data.telescopeLink,
-    });
+    return this.http.post('/api/register', data);
   }
 }

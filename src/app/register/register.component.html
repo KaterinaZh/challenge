@@ -1,0 +1,52 @@
+<div class="d-flex min-vh-100 justify-content-center align-items-center">
+  <div class="card col-4">
+    <h4 class="card-header">Join the challenge!</h4>
+    <div class="card-body">
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+          <label class="form-label">First name</label>
+          <input type="text" formControlName="firstName" class="form-control"
+                 [ngClass]="{'is-invalid': form.controls['firstName'].dirty && form.controls['firstName'].errors }"/>
+          <div *ngIf="form.controls['firstName'].errors" class="invalid-feedback">
+            <span *ngIf="form.controls['firstName'].errors?.['required']">First name is required</span>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Last name</label>
+          <input type="text" formControlName="lastName" class="form-control"
+                 [ngClass]="{'is-invalid': form.controls['lastName'].dirty && form.controls['lastName'].errors }"/>
+          <div *ngIf="form.controls['lastName'].errors" class="invalid-feedback">
+            <span *ngIf="form.controls['lastName'].errors?.['required']">Last name is required</span>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Link to your telescope</label>
+          <input type="text" formControlName="telescopeLink" class="form-control"
+                 [ngClass]="{'is-invalid': form.controls['telescopeLink'].dirty && form.controls['telescopeLink'].errors }"/>
+          <div *ngIf="form.controls['telescopeLink'].errors" class="invalid-feedback">
+            <span *ngIf="form.controls['telescopeLink'].errors?.['required']">Link is required</span>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Codewars username</label>
+          <input type="text" formControlName="codewarsUsername" class="form-control"
+                 [ngClass]="{'is-invalid': form.controls['codewarsUsername'].dirty && form.controls['codewarsUsername'].errors }"/>
+          <div *ngIf="form.controls['codewarsUsername'].errors" class="invalid-feedback">
+            <span *ngIf="form.controls['codewarsUsername'].errors?.['required']">Codewars username is required</span>
+          </div>
+        </div>
+        <div>
+          <button [disabled]="loading" class="btn btn-primary">
+            <span *ngIf="loading" class="spinner-border spinner-border-sm me-1"></span>
+            Join the challenge!
+          </button>
+          <button type="button" class="btn btn-secondary ms-2" (click)="redirectToHomePage()">Back</button>
+          <div *ngIf="error">
+            <div class="is-invalid"></div>
+            <span class="invalid-feedback">{{error}}</span>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

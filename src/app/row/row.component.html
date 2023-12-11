@@ -2,8 +2,9 @@
 
   <app-loader *ngIf="isLoading"></app-loader>
   <div class="admin-panel row">
-    <div class="col">
-      <button type="button" class="btn btn-secondary float-end" (click)="goToAdmin()">Admin console</button>
+    <div class="col d-flex flex-row justify-content-end">
+      <button type="button" class="btn btn-primary mx-2" (click)="goToRegister()">Join challenge</button>
+      <button type="button" class="btn btn-secondary ml-1" (click)="goToAdmin()">Admin console</button>
     </div>
   </div>
 

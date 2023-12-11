@@ -40,6 +40,10 @@ export class RowComponent implements OnInit {
     this.router.navigate(['/admin-login']);
   }
 
+  public goToRegister() {
+    this.router.navigate(['/register']);
+  }
+
   public changeRun(run: Run) {
     this.currentRun = run;
     this.addUsers();

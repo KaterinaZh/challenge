@@ -1,5 +1,6 @@
 import {Component, ElementRef, EventEmitter, HostListener, Input, OnInit, Output, ViewChild} from '@angular/core';
-import {Run} from "../models/task.model";
+import {Run} from "../models/run.model";
+
 
 @Component({
   selector: 'app-dropdown',

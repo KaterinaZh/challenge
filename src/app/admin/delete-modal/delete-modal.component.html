@@ -1,0 +1,15 @@
+<ng-container *ngIf="run || task">
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Delete {{run ? 'run' : 'task'}}</h4>
+    <button type="button" class="btn-close" aria-label="Close" (click)="back()"></button>
+  </div>
+  <div class="modal-body">
+    Are you sure you want to delete "{{run ? run.description : task.name}}"?
+  </div>
+  <div class="modal-footer">
+    <button type="button" [disabled]="loading" class="btn btn-primary" (click)="delete()">
+      <span *ngIf="loading" class="spinner-border spinner-border-sm me-1"></span>
+      <i class="bi bi-trash"></i> Delete
+    </button>
+  </div>
+</ng-container>

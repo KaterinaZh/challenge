@@ -1,0 +1,62 @@
+.card-header .btn {
+  padding-left: 0;
+  font-size: 20px;
+}
+
+.card-body {
+  height: calc(100vh - 100px);
+  overflow: auto;
+}
+
+.task-header {
+  margin: 0;
+  font-size: 34px;
+  font-family: Tw Cen MT Condensed, sans-serif;
+  text-transform: uppercase;
+}
+
+.deadline {
+  display: inline-block;
+  width: auto;
+  text-transform: uppercase;
+  font-size: 11px;
+  margin-bottom: 15px;
+}
+
+.edit-btn {
+  width: auto;
+  margin-left: 2px;
+}
+
+.dropdown-item {
+  cursor: pointer;
+
+  &:active {
+    background-color: #1CADE4;
+  }
+}
+
+.points {
+  width: calc(100% - 45px);
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.task-btn {
+  padding: 6px 0;
+  border: 0;
+}
+
+.task-action-btn {
+  margin-left: 2px;
+  padding: 0 5px;
+}
+
+.create-btn {
+  margin-left: 2px;
+  background: none;
+  border: 0;
+  &:disabled {
+    color: #999;
+  }
+}

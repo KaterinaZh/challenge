@@ -1,8 +1,7 @@
-export interface Run {
-  index: number;
-  description: string;
-  startDate: string;
-  endDate: string;
+/**
+ * response from BE
+ */
+export interface Tasks {
   tasks: Task[];
 }
 

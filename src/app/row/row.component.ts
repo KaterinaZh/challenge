@@ -1,8 +1,9 @@
 import {Component, OnInit} from '@angular/core';
 import {LeaderboardService} from "../services/leaderboard.service";
-import {Run, Task, TaskList} from "../models/task.model";
+import {Task, TaskList} from "../models/task.model";
 import {User} from "../models/user.model";
 import {Router} from "@angular/router";
+import {Run} from "../models/run.model";
 
 @Component({
   selector: 'app-row',
@@ -83,7 +84,7 @@ export class RowComponent implements OnInit {
   }
 
   private handleTaskList(nickname: string, taskList: TaskList) {
-    const tasks = this.leaderboardService.getTasksInfoByUserData(taskList, this.currentRun.tasks);
+    const tasks = this.leaderboardService.getTasksInfoByUserData(taskList, this.currentRun.tasks || []);
     const total: number = tasks.map(task => task.points ? task.points : 0)
       .reduce((partialSum, a) => partialSum + a, 0);
     const user = this.allUsers.filter(user => user.nickname === nickname);
@@ -129,7 +130,7 @@ export class RowComponent implements OnInit {
   }
 
   private findFastestSolution() {
-    for (const task of this.currentRun.tasks) {
+    for (const task of this.currentRun.tasks || []) {
       let earliest: Date | null | undefined = null;
       let currentUser: User | null | undefined = null;
       for (const user of this.users) {

@@ -1,12 +1,113 @@
 <div class="d-flex min-vh-100 justify-content-center align-items-center">
   <div class="card col-8">
-    <h4 class="card-header">Welcome Admin</h4>
+    <div class="card-header">
+      <button type="button" class="btn float-start" (click)="back()" ngbTooltip="To Leaderboard">
+        <i class="bi bi-arrow-left"></i>
+      </button>
+      <h4 class="float-start pt-2">Welcome Admin</h4>
+      <button type="button" class="btn float-end logout-button" (click)="logout()" ngbTooltip="Log out">
+        <i class="bi bi-arrow-bar-right"></i>
+      </button>
+    </div>
+
     <div class="card-body">
       <div class="mb-2">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <div *ngIf="currentRun" class="panel">
+          <div class="row">
+            <h4 class="task-header col-9">{{currentRun.description}}
+              <button type="button" class="btn" ngbTooltip="Delete run" (click)="deleteRun()">
+                <i class="bi bi-trash"></i>
+              </button>
+            </h4>
+            <div class="col-3">
+              <div ngbDropdown class="d-inline-block float-end" placement="bottom-end">
+                <button type="button" class="btn btn-secondary" id="dropdownRun" ngbDropdownToggle>
+                  {{currentRun.description}}
+                </button>
+                <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdownRun">
+                  <button ngbDropdownItem *ngFor="let item of runs" (click)="chooseRun(item)">
+                    <span class="dropdown-item">{{item.description}}</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <span class="deadline">{{currentRun.startDate|date:'MMM d'}} -
+            {{currentRun.endDate|date:'medium'}}</span>
+          <button type="button" class="btn edit-btn" ngbTooltip="Edit run" placement="top" (click)="editRun()">
+            <i class="bi bi-pencil-square"></i>
+          </button>
+          <table class="table table-bordered">
+            <colgroup>
+              <col span="1" style="width: 10%;">
+              <col span="1" style="width: 70%;">
+              <col span="1" style="width: 20%;">
+            </colgroup>
+            <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Name</th>
+              <th scope="col">Points</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let task of currentRun.tasks; let i = index">
+              <th scope="row">{{i + 1}}</th>
+              <td>
+                <a class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                   target="_blank"
+                   href="https://www.codewars.com/kata/{{task.id}}/train/javascript">{{task.name}}</a>
+              </td>
+              <td>
+                <span class="points">{{task.points}}</span>
+                <button type="button" class="btn task-action-btn" ngbTooltip="Delete task" (click)="deleteTask(task)">
+                  <i class="bi bi-trash"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button *ngIf="!newTaskIdVisible" type="button" class="btn task-btn" ngbTooltip="Add task"
+                        placement="top" (click)="newTaskIdVisible = true">
+                  <i class="bi bi-journal-plus"></i>
+                </button>
+                <button *ngIf="newTaskIdVisible" type="button" class="btn task-btn" ngbTooltip="Hide task"
+                        placement="top" (click)="newTaskIdVisible = false">
+                  <i class="bi bi-journal-minus"></i>
+                </button>
+              </td>
+              <td>
+                <input *ngIf="newTaskIdVisible" placeholder="Enter id of new task" type="text"
+                       class="form-control" [(ngModel)]="newTaskId"/>
+                <div *ngIf="newTaskIdVisible && newTaskErr">
+                  <div class="is-invalid"></div>
+                  <span class="invalid-feedback">{{newTaskErr}}</span>
+                </div>
+              </td>
+              <td>
+                <input *ngIf="newTaskIdVisible" placeholder="Enter points" type="text" class="form-control points"
+                       [(ngModel)]="newTaskPoints"/>
+                <button *ngIf="newTaskIdVisible" [disabled]="!newTaskId || !newTaskPoints"
+                        type="button" class="btn btn-secondary create-btn" ngbTooltip="Create task"
+                        placement="top" (click)="createTask()">
+                  <i class="bi bi-check-square"></i>
+                </button>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <app-loader *ngIf="isLoading"></app-loader>
+
+        <ng-container *ngIf="!isLoading">
+          <div *ngIf="runs.length === 0" class="mb-2">No runs found</div>
+          <button type="button" class="btn btn-secondary" (click)="openNewRunForm()">
+            <i class="bi bi-calendar2-plus"></i> Add run
+          </button>
+        </ng-container>
       </div>
-      <button type="button" class="btn btn-primary" (click)="logout()">Log out</button>
-      <button type="button" class="btn btn-secondary ms-2" (click)="back()">To Leaderboard</button>
     </div>
   </div>
 </div>

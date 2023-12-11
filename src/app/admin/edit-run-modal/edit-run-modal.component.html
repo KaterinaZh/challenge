@@ -1,0 +1,32 @@
+<div class="modal-header">
+  <h4 class="modal-title" id="modal-basic-title">Edit run</h4>
+  <button type="button" class="btn-close" aria-label="Close" (click)="back()"></button>
+</div>
+<div class="modal-body">
+  <form>
+    <div class="col-6 mb-3">
+      <label for="endDate">New end date</label>
+      <div class="input-group">
+        <input
+          id="endDate"
+          #runEndDate
+          class="form-control"
+          placeholder="yyyy-mm-dd"
+          name="dp"
+          [value]="formatter.format(toDate)"
+          (input)="toDate = validateInput(toDate, runEndDate.value)"
+          (dateSelect)="toDate = $event"
+          ngbDatepicker
+          #dp="ngbDatepicker"
+        />
+        <button class="btn btn-outline-secondary bi bi-calendar3" (click)="toggle(dp)" type="button"></button>
+      </div>
+    </div>
+  </form>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-primary" [disabled]="loading" (click)="onSubmit()">
+    <span *ngIf="loading" class="spinner-border spinner-border-sm me-1"></span>
+    <i class="bi bi-calendar2-check"></i> Save
+  </button>
+</div>

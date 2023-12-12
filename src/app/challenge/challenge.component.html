@@ -1,21 +1,41 @@
 <div class="container-fluid">
-
   <app-loader *ngIf="isLoading"></app-loader>
-  <div class="admin-panel row">
-    <div class="col d-flex flex-row justify-content-end">
-      <button type="button" class="btn btn-primary mx-2" (click)="goToRegister()">Join challenge</button>
-      <button type="button" class="btn btn-secondary ml-1" (click)="goToAdmin()">Admin console</button>
+  <div class="top-panel">
+    <div class="challenge-background"></div>
+    <h1 class="main-header leaderboard-header">JS Coding Challenge</h1>
+    <div class="info-panel">
+      <div>
+        Improve your development skills by passing coding challenge with your colleagues on
+        <a class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+           target="_blank"
+           href="https://www.codewars.com">Codewars</a>
+        platform that
+        continuously push your coding practice!
+        <br/><br/>
+        8 weeks duration of challenge
+        <br/>
+        5 tasks in different levels/points each week
+        <br/>
+        5 extra points for the fastest solution <i class="bi bi-stopwatch"></i>
+      </div>
+      <button *ngIf="currentRun" type="button" class="btn btn-secondary" (click)="scroll('tasks-panel')">
+        Tasks
+      </button>
+      <button *ngIf="currentRun" type="button" class="btn btn-secondary" (click)="scroll('leaderboard-panel')">
+        Leaderboard
+      </button>
+      <button type="button" class="btn btn-primary" (click)="goToRegister()">Join the challenge!</button>
     </div>
   </div>
 
-  <div *ngIf="currentRun" class="panel">
+  <div id="tasks-panel" *ngIf="currentRun" class="panel">
     <div class="row">
       <h4 class="task-header col-10">{{currentRun.description}}</h4>
       <div class="col-2">
         <app-dropdown class="float-end" [options]="runs" (chooseEvent)="changeRun($event)"></app-dropdown>
       </div>
-
     </div>
+
     <span class="deadline">{{currentRun.startDate|date:'d MMM'}} -
       {{currentRun.endDate|date:'medium'}}</span>
     <table class="table table-bordered">
@@ -58,7 +78,7 @@
     </div>
   </div>
 
-  <div class="leaderboard" *ngIf="currentRun">
+  <div id="leaderboard-panel" class="leaderboard" *ngIf="currentRun">
     <h4 class="leaderboard-header">JS Coding Challenge<br/>Leaderboard</h4>
 
     <table class="table">

@@ -4,7 +4,7 @@ import {BrowserModule} from '@angular/platform-browser';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
-import {RowComponent} from './row/row.component';
+import {ChallengeComponent} from './challenge/challenge.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {CommonModule} from "@angular/common";
 import {NgbActiveModal, NgbModule} from '@ng-bootstrap/ng-bootstrap';
@@ -21,7 +21,7 @@ import { RegisterComponent } from './register/register.component';
 @NgModule({
   declarations: [
     AppComponent,
-    RowComponent,
+    ChallengeComponent,
     LoaderComponent,
     DropdownComponent,
     AdminLoginComponent,

@@ -4,13 +4,14 @@ import {Task, TaskList} from "../models/task.model";
 import {User} from "../models/user.model";
 import {Router} from "@angular/router";
 import {Run} from "../models/run.model";
+import {noop} from "rxjs";
 
 @Component({
-  selector: 'app-row',
-  templateUrl: './row.component.html',
-  styleUrls: ['./row.component.scss']
+  selector: 'app-challenge',
+  templateUrl: './challenge.component.html',
+  styleUrls: ['./challenge.component.scss']
 })
-export class RowComponent implements OnInit {
+export class ChallengeComponent implements OnInit {
   public isLoading: boolean;
   public runs: Run[] = [];
   public currentRun: Run;
@@ -37,12 +38,13 @@ export class RowComponent implements OnInit {
     this.leaderboardService.getUsers().subscribe((res: User[]) => this.allUsers = res);
   }
 
-  public goToAdmin() {
-    this.router.navigate(['/admin-login']);
-  }
-
   public goToRegister() {
     this.router.navigate(['/register']);
+  }
+
+  public scroll(id: string) {
+    const el = document.getElementById(id);
+    el ? el.scrollIntoView({behavior: 'smooth'}) : noop();
   }
 
   public changeRun(run: Run) {

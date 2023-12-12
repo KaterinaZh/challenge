@@ -75,6 +75,11 @@
   font-size: 34px;
   font-family: Tw Cen MT Condensed, sans-serif;
   text-transform: uppercase;
+
+  &.main-header {
+    font-size: 4em;
+    padding: 15px;
+  }
 }
 
 .leaderboard-table-header {
@@ -202,8 +207,52 @@
   }
 }
 
-.admin-panel {
- .col {
-   padding: 15px 20px 0 0;
- }
+.top-panel {
+  height: 100vh;
+  position: relative;
+}
+
+.challenge-background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url(../../assets/images/challenge_page.svg) 30vw/auto 100% no-repeat;
+  animation-name: challenge-image;
+  animation-duration: 4s;
+}
+
+@keyframes challenge-image {
+  from {
+    background-position-x: center;
+    opacity: 0
+  }
+  to {
+    background-position-x: 30vw;
+    opacity: 100%;
+  }
+}
+
+.info-panel {
+  min-width: 300px;
+  width: 30%;
+  margin: 15vh 0 0 30px;
+  padding: 20px;
+  background-color: #1cade41c;
+  border-radius: 5px;
+  white-space: pre-line;
+  font-size: 1.1em;
+
+  .btn {
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+
+  .btn, .link-secondary {
+    position: relative;
+    z-index: 10;
+  }
+
+  .bi-stopwatch {
+    color: #1CADE4;
+  }
 }

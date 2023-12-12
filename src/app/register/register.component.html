@@ -28,7 +28,10 @@
           </div>
         </div>
         <div class="mb-3">
-          <label class="form-label">Codewars username</label>
+          <label class="form-label">
+            <a class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+               target="_blank"
+               href="https://www.codewars.com">Codewars</a> username</label>
           <input type="text" formControlName="codewarsUsername" class="form-control"
                  [ngClass]="{'is-invalid': form.controls['codewarsUsername'].dirty && form.controls['codewarsUsername'].errors }"/>
           <div *ngIf="form.controls['codewarsUsername'].errors" class="invalid-feedback">

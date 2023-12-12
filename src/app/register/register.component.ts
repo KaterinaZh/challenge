@@ -12,13 +12,14 @@ export class RegisterComponent {
   form: FormGroup;
   error: string;
   loading = false;
+  isWelcomeScreen = false;
 
   constructor(
     private formBuilder: FormBuilder,
     private userService: UserService,
     private router: Router,
   ) {
-
+    this.isWelcomeScreen = userService.isRegistered();
   }
 
   ngOnInit() {
@@ -54,6 +55,7 @@ export class RegisterComponent {
     }).subscribe({
       next: (res) => {
         this.loading = false;
+        this.showWelcomeScreen();
       },
       error: error => {
         this.error = error?.error?.message || 'Error';
@@ -61,6 +63,11 @@ export class RegisterComponent {
         this.loading = false;
       }
     })
+  }
+
+  showWelcomeScreen() {
+    localStorage.setItem('hasRegistered', String(true));
+    this.isWelcomeScreen = true;
   }
 
   redirectToHomePage() {

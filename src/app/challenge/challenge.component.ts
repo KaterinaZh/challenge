@@ -5,6 +5,7 @@ import {User} from "../models/user.model";
 import {Router} from "@angular/router";
 import {Run} from "../models/run.model";
 import {noop} from "rxjs";
+import { UserService } from '../services/user.service';
 
 @Component({
   selector: 'app-challenge',
@@ -22,9 +23,14 @@ export class ChallengeComponent implements OnInit {
   //whilestevego;Cloud Walker;dfhwze
   public usersCount: number = 0;
   public sliceEnd: number = 10;
+  public hasTopPanel: boolean = false;
 
-  constructor(private leaderboardService: LeaderboardService,
-              private router: Router) {
+  constructor(
+    private leaderboardService: LeaderboardService,
+    private router: Router,
+    private UserService: UserService,
+  ) {
+    this.hasTopPanel = !UserService.isRegistered();
   }
 
   ngOnInit() {

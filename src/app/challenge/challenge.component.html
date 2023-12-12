@@ -1,6 +1,9 @@
 <div class="container-fluid">
   <app-loader *ngIf="isLoading"></app-loader>
-  <div class="top-panel">
+  <div *ngIf="!hasTopPanel">
+    <h1 class="main-header leaderboard-header">JS Coding Challenge</h1>
+  </div>
+  <div *ngIf="hasTopPanel" class="top-panel">
     <div class="challenge-background"></div>
     <h1 class="main-header leaderboard-header">JS Coding Challenge</h1>
     <div class="info-panel">

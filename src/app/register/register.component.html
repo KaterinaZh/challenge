@@ -1,5 +1,22 @@
 <div class="d-flex min-vh-100 justify-content-center align-items-center">
-  <div class="card col-4">
+  <div *ngIf="isWelcomeScreen" class="card col-11 col-md-4">
+    <h4 class="card-header">Welcome to the challenge!</h4>
+    <div class="card-body">
+      <div class="welcome-text-container">
+        <img class="welcome-image" src="../../assets/images/ralph_welcome.gif" />
+        <p>
+          We recommend you to add this website to your bookmarks, so you will be able to track easily our leaderboard.
+        </p>
+        <p>
+          Please, press the following button to go to the main page - there you can find all the tasks & our current leaders!
+        </p>
+        <button class="btn btn-primary" (click)="redirectToHomePage()">
+          Go to the leaderboard
+        </button>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="!isWelcomeScreen" class="card col-11 col-md-4">
     <h4 class="card-header">Join the challenge!</h4>
     <div class="card-body">
       <form [formGroup]="form" (ngSubmit)="onSubmit()">

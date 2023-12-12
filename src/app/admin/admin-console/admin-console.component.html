@@ -41,14 +41,16 @@
           <table class="table table-bordered">
             <colgroup>
               <col span="1" style="width: 10%;">
-              <col span="1" style="width: 70%;">
-              <col span="1" style="width: 20%;">
+              <col span="1" style="width: 65%;">
+              <col span="1" style="width: 15%;">
+              <col span="1" style="width: 10%;">
             </colgroup>
             <thead>
             <tr>
               <th scope="col">#</th>
               <th scope="col">Name</th>
               <th scope="col">Points</th>
+              <th scope="col">Actions</th>
             </tr>
             </thead>
             <tbody>
@@ -60,7 +62,9 @@
                    href="https://www.codewars.com/kata/{{task.id}}/train/javascript">{{task.name}}</a>
               </td>
               <td>
-                <span class="points">{{task.points}}</span>
+                <span>{{task.points}}</span>
+              </td>
+              <td class="centered-column">
                 <button type="button" class="btn task-action-btn" ngbTooltip="Delete task" (click)="deleteTask(task)">
                   <i class="bi bi-trash"></i>
                 </button>
@@ -86,8 +90,10 @@
                 </div>
               </td>
               <td>
-                <input *ngIf="newTaskIdVisible" placeholder="Enter points" type="text" class="form-control points"
+                <input *ngIf="newTaskIdVisible" placeholder="Enter points" type="text" class="form-control"
                        [(ngModel)]="newTaskPoints"/>
+              </td>
+              <td class="centered-column">
                 <button *ngIf="newTaskIdVisible" [disabled]="!newTaskId || !newTaskPoints"
                         type="button" class="btn btn-secondary create-btn" ngbTooltip="Create task"
                         placement="top" (click)="createTask()">

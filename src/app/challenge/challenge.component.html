@@ -30,15 +30,29 @@
 
   <div id="tasks-panel" *ngIf="currentRun" class="panel">
     <div class="row">
-      <h4 class="task-header col-10">{{currentRun.description}}</h4>
-      <div class="col-2">
-        <app-dropdown class="float-end" [options]="runs" (chooseEvent)="changeRun($event)"></app-dropdown>
+      <h4 class="task-header col-9">{{currentRun.description}}</h4>
+      <div class="col-3">
+        <div ngbDropdown class="d-inline-block float-end" placement="bottom-end">
+          <button type="button" class="btn btn-secondary" id="dropdownRun" ngbDropdownToggle>
+            {{currentRun.description}}
+          </button>
+          <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdownRun">
+            <button ngbDropdownItem *ngFor="let item of runs" (click)="chooseRun(item)">
+              <span class="dropdown-item">{{item.description}}</span>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
 
-    <span class="deadline">{{currentRun.startDate|date:'d MMM'}} -
+    <span class="deadline">{{currentRun.startDate|date:'MMM d'}} -
       {{currentRun.endDate|date:'medium'}}</span>
     <table class="table table-bordered">
+      <colgroup>
+        <col span="1" style="width: 10%;">
+        <col span="1" style="width: 70%;">
+        <col span="1" style="width: 20%;">
+      </colgroup>
       <thead>
       <tr>
         <th scope="col">#</th>
@@ -58,24 +72,6 @@
       </tr>
       </tbody>
     </table>
-  </div>
-
-  <div class="add-users-panel row g-3">
-    <div class="col-5">
-      <div class="input-group mb-3">
-        <span class="input-group-text" id="add-users">Add users:</span>
-        <input type="text" class="form-control" placeholder="Username" aria-label="Username"
-               aria-describedby="add-users" name="userName" [(ngModel)]="userNames">
-      </div>
-    </div>
-    <div class="col-6">
-      <button type="button" class="btn btn-primary mb-3" (click)="addUsers()">Add</button>
-    </div>
-    <div class="col-1">
-      <button *ngIf="usersCount > 0 && sliceEnd < usersCount"
-              type="button" class="btn btn-primary float-end" (click)="showAll()">Show all
-      </button>
-    </div>
   </div>
 
   <div id="leaderboard-panel" class="leaderboard" *ngIf="currentRun">
@@ -136,5 +132,9 @@
       </tr>
       </tbody>
     </table>
+
+    <button *ngIf="usersCount > 0 && sliceEnd < usersCount"
+            type="button" class="btn btn-primary float-end" (click)="showAll()">Show all
+    </button>
   </div>
 </div>

@@ -28,13 +28,7 @@ export class ChallengeComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.leaderboardService.getTasks().subscribe((res: Run []) => {
-      if (res && res.length > 0) {
-        this.runs = res;
-        this.currentRun = res[res.length - 1];
-        // TODO: add validation on dates: endDate and completedAt, put it as unsolved task
-      }
-    });
+    this.initRunList();
     this.leaderboardService.getUsers().subscribe((res: User[]) => this.allUsers = res);
   }
 
@@ -47,22 +41,41 @@ export class ChallengeComponent implements OnInit {
     el ? el.scrollIntoView({behavior: 'smooth'}) : noop();
   }
 
-  public changeRun(run: Run) {
+  public chooseRun(run: Run) {
     this.currentRun = run;
-    this.addUsers();
+    this.loadUsers();
   }
 
   public showAll() {
     this.sliceEnd = this.usersCount;
   }
 
-  public addUsers() {
+  private loadUsers() {
     this.isLoading = true;
     this.users = [];
     const names: string[] = this.userNames.split(';').filter(name => name !== '');
     this.usersCount = names.length;
     names.forEach(nickname => {
       this.getUserTasksData(nickname, 0);
+    });
+  }
+
+  private initRunList() {
+    this.isLoading = true;
+    this.leaderboardService.getRunList().subscribe((runs: Run[]) => {
+      this.runs = runs;
+      if (this.runs.length > 0) {
+        const today = new Date();
+        const todayRun = this.runs.filter(run => {
+          if (today >= new Date(run.startDate) && today <= new Date(run.endDate)) {
+            return run;
+          }
+          return;
+        })
+        this.currentRun = todayRun.length > 0 ? todayRun[0] : this.runs[this.runs.length - 1];
+      }
+      this.loadUsers(); // TODO: remove when leaderboard is ready
+      this.isLoading = false;
     });
   }
 

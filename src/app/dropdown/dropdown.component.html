@@ -1,9 +1,0 @@
-<div #dropdown class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" (click)="openDropdown()">
-    {{chosenValue}}
-  </button>
-  <ul class="dropdown-menu" [ngClass]="{'show': toggle}">
-    <li *ngFor="let item of options"
-        (click)="chooseItem(item)"><span class="dropdown-item">{{item.description}}</span></li>
-  </ul>
-</div>

@@ -15,6 +15,7 @@ export interface RunBE {
   run_start_date: string;
   run_end_date: string;
   description?: string;
+  tasks: Task[]
 }
 
 /**

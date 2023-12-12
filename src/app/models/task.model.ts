@@ -10,7 +10,7 @@ export interface Task {
   name: string;
   completedAt?: string;
   completedLanguages?: string[];
-  points?: number;
+  points: number;
   fastestSolution?: boolean;
 }
 

@@ -1,8 +1,6 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
-import {map, Observable} from "rxjs";
-import {Run, Runs} from "../models/run.model";
-import {Task, Tasks} from "../models/task.model";
+import {Observable} from "rxjs";
 
 @Injectable({
   providedIn: 'root'
@@ -32,18 +30,6 @@ export class AdminService {
     localStorage.removeItem(this.TOKEN);
   }
 
-  getRunList(): Observable<Run[]> {
-    return this.http.get<Runs>(this.RUNS).pipe(map(runs => runs.runs.map((run, i) => {
-      return {
-        id: run.id,
-        startDate: run.run_start_date,
-        endDate: run.run_end_date,
-        description: `Run ${i + 1}`,
-        index: i
-      };
-    })));
-  }
-
   createRun(fromDate: string, toDate: string) {
     return this.http.post(this.RUNS, {
       runStartDate: fromDate,
@@ -59,10 +45,6 @@ export class AdminService {
 
   deleteRun(id: number) {
     return this.http.delete(`${this.RUNS}/${id}`);
-  }
-
-  getTasks(): Observable<Task[]> {
-    return this.http.get<Tasks>(this.TASKS).pipe(map(tasks => tasks.tasks));
   }
 
   createTask(id: string, runId: number, points: number) {

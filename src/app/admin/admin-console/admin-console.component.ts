@@ -5,9 +5,9 @@ import {Run} from "../../models/run.model";
 import {Task} from "../../models/task.model";
 import {NgbModal} from "@ng-bootstrap/ng-bootstrap";
 import {DeleteModalComponent} from "../delete-modal/delete-modal.component";
-import {forkJoin} from "rxjs";
 import {AddRunModalComponent} from "../add-run-modal/add-run-modal.component";
 import {EditRunModalComponent} from "../edit-run-modal/edit-run-modal.component";
+import {LeaderboardService} from "../../services/leaderboard.service";
 
 @Component({
   selector: 'app-admin-console',
@@ -26,6 +26,7 @@ export class AdminConsoleComponent implements OnInit {
 
   constructor(
     private adminService: AdminService,
+    private leaderboardService: LeaderboardService,
     private router: Router
   ) {
   }
@@ -120,20 +121,10 @@ export class AdminConsoleComponent implements OnInit {
 
   private initRunList() {
     this.isLoading = true;
-    const runs$ = this.adminService.getRunList();
-    const tasks$ = this.adminService.getTasks();
-
-    forkJoin([runs$, tasks$]).subscribe((res: [runs: Run[], tasks: Task[]]) => {
-      this.runs = res[0];
-      // TODO: add tasks to specific run
-      // this.runs.forEach(run => run.tasks = res[1]);
+    this.leaderboardService.getRunList().subscribe((runs: Run[]) => {
+      this.runs = runs;
       if (this.runs.length > 0) {
         this.currentRun = this.runs[this.runs.length - 1];
-        this.currentRun.tasks = res[1].map((task, index) => {
-          // TODO: get points from server
-          task.points = 5 * (index + 1);
-          return task
-        });
       }
       this.isLoading = false;
     });

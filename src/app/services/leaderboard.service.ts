@@ -1,15 +1,16 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
-import {Observable} from "rxjs";
+import {map, Observable} from "rxjs";
 import {Task, TaskList} from "../models/task.model";
 import {User} from "../models/user.model";
-import {Run} from "../models/run.model";
+import {Run, Runs} from "../models/run.model";
 
 @Injectable({
   providedIn: 'root'
 })
 export class LeaderboardService {
 
+  private readonly RUNS = '/api/runs';
   private apiURL = 'https://www.codewars.com/api/v1';
   private dataURL = '../../assets/data';
 
@@ -24,8 +25,19 @@ export class LeaderboardService {
     return this.http.get<User[]>(`${this.dataURL}/users.json`);
   }
 
-  getTasks(): Observable<Run[]> {
-    return this.http.get<Run[]>(`${this.dataURL}/tasks.json`);
+  getRunList(): Observable<Run[]> {
+    return this.http.get<Runs>(this.RUNS).pipe(map(runs => runs.runs.map((run, i) => {
+      return {
+        id: run.id,
+        startDate: run.run_start_date,
+        endDate: run.run_end_date,
+        tasks: run.tasks.sort((task1: Task, task2: Task) => {
+          return task1.points - task2.points
+        }),
+        description: `Run ${i + 1}`,
+        index: i
+      };
+    })));
   }
 
   getTasksInfoByUserData(taskList: TaskList, tasks: Task[]): Task[] {
@@ -33,7 +45,7 @@ export class LeaderboardService {
       const userTask: Task = {...task};
       const foundTasks: Task[] = taskList.data.filter(userTask => task.id === userTask.id &&
         (userTask.completedLanguages?.includes('javascript') ||
-        userTask.completedLanguages?.includes('typescript')));
+          userTask.completedLanguages?.includes('typescript')));
       if (foundTasks?.length > 0) {
         userTask.completedAt = foundTasks[0].completedAt;
       } else {

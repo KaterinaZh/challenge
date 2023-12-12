@@ -36,10 +36,8 @@
   }
 }
 
-.points {
-  width: calc(100% - 45px);
-  display: inline-block;
-  vertical-align: middle;
+.centered-column {
+  text-align: center;
 }
 
 .task-btn {

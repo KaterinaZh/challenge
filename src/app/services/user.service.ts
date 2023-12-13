@@ -16,6 +16,10 @@ export class UserService {
   constructor(private http: HttpClient) {
   }
 
+  isRegistered() {
+    return !!localStorage.getItem('hasRegistered');
+  }
+
   register(data: RegisterData) {
     return this.http.post('/api/register', data);
   }

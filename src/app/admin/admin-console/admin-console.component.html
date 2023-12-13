@@ -12,7 +12,7 @@
 
     <div class="card-body">
       <div class="mb-2">
-        <div *ngIf="currentRun" class="panel">
+        <ng-container *ngIf="currentRun">
           <div class="row">
             <h4 class="task-header col-9">{{currentRun.description}}
               <button type="button" class="btn" ngbTooltip="Delete run" (click)="deleteRun()">
@@ -103,7 +103,7 @@
             </tr>
             </tbody>
           </table>
-        </div>
+        </ng-container>
 
         <app-loader *ngIf="isLoading"></app-loader>
 

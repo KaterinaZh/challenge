@@ -3,6 +3,7 @@
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
 @import 'bootstrap-icons/font/bootstrap-icons';
+@import 'assets/styles/theme';
 
 @font-face {
   font-family: 'Tw Cen MT Condensed';
@@ -21,16 +22,30 @@
 }
 
 .btn-primary, .btn-primary:hover {
-  background-color: #1CADE4;
+  color: var(--bg);
+  background-color: var(--base);
   border: 0;
 }
 
 .btn-secondary, .btn-secondary:hover {
-  background-color: #fff;
-  border: 1px solid #1CADE4;
-  color: #1CADE4;
+  background-color: var(--bg);
+  border: 1px solid var(--base);
+  color: var(--base);
+
+  &:active {
+    border: 1px solid var(--base);
+    background-color: var(--base);
+  }
 }
 
-.dropdown-item:active {
-  background-color: #1CADE4;
+.dropdown-menu {
+  background-color: var(--menu-bg);
+}
+
+.dropdown-item {
+  cursor: pointer;
+
+  &:active {
+    background-color: var(--base);
+  }
 }

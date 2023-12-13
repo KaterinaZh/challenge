@@ -5,7 +5,7 @@ import {User} from "../models/user.model";
 import {Router} from "@angular/router";
 import {Run} from "../models/run.model";
 import {noop} from "rxjs";
-import { UserService } from '../services/user.service';
+import {UserService} from '../services/user.service';
 
 @Component({
   selector: 'app-challenge',
@@ -28,12 +28,12 @@ export class ChallengeComponent implements OnInit {
   constructor(
     private leaderboardService: LeaderboardService,
     private router: Router,
-    private UserService: UserService,
+    private userService: UserService,
   ) {
-    this.hasTopPanel = !UserService.isRegistered();
   }
 
   ngOnInit() {
+    this.hasTopPanel = !this.userService.isRegistered();
     this.initRunList();
     this.leaderboardService.getUsers().subscribe((res: User[]) => this.allUsers = res);
   }
@@ -156,8 +156,7 @@ export class ChallengeComponent implements OnInit {
       let currentUser: User | null | undefined = null;
       for (const user of this.users) {
         let completedAt = user.tasks.filter(t => t.id === task.id).map(t => t.completedAt)[0];
-        if (completedAt && (!earliest || earliest > new Date(completedAt)) &&
-          new Date(completedAt) > new Date(this.currentRun.startDate)) {
+        if (completedAt) {
           earliest = new Date(completedAt);
           currentUser = user;
         }

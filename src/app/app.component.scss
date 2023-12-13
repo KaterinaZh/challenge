@@ -1,0 +1,10 @@
+@import '../assets/styles/theme';
+
+.toggle-btn {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 20px;
+  color: var(--base);
+  cursor: pointer;
+}

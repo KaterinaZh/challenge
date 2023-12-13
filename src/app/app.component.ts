@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {UserService} from "./services/user.service";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,28 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'challenge';
+  public isLightTheme: boolean = true;
+
+  constructor(
+    private userService: UserService
+  ) {
+  }
+
+  ngOnInit() {
+    this.isLightTheme = this.userService.getTheme() !== 'dark';
+    this.updateThemeBody();
+  }
+
+  public onThemeSwitchChange() {
+    this.isLightTheme = !this.isLightTheme;
+    this.userService.setTheme(this.isLightTheme);
+    this.updateThemeBody();
+  }
+
+  private updateThemeBody() {
+    document.body.setAttribute(
+      'data-theme',
+      this.isLightTheme ? 'light' : 'dark'
+    );
+  }
 }

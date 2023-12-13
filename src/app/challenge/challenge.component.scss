@@ -1,14 +1,16 @@
-.panel {
+@import '../../assets/styles/theme';
+
+.tasks-panel {
   margin: 20px 10px;
   padding: 15px 20px 20px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--panel-border);
   border-radius: .25rem;
-  font-family: Segoe UI, sans-serif;
+  font-family: $font-family;
 }
 
 .task-header {
   font-size: 34px;
-  font-family: Tw Cen MT Condensed, sans-serif;
+  font-family: $font-family-header;
   text-transform: uppercase;
 }
 
@@ -25,12 +27,10 @@
 
 .fastest-solution {
   position: relative;
-  top: -2px;
+  top: 1px;
   display: inline-block;
-  height: 20px;
-  width: 20px;
-  margin-left: 2px;
-  vertical-align: middle;
+  margin-left: 3px;
+  cursor: pointer;
 
   span {
     display: none;
@@ -44,36 +44,31 @@
     left: -40px;
     font-size: 12px;
     font-weight: 500;
-    background-color: rgba(255, 255, 255, 0.9);
-    border: 1px solid rgba(204, 204, 204, 0.5);
+    background-color: var(--fast-sol-bg);
+    border: 1px solid var(--fast-sol-br);
     border-radius: 5px;
     opacity: 50;
   }
 
-  &-icon {
-    display: inline-block;
-    height: 20px;
-    width: 20px;
-    mask-image: url(../../assets/icons/stopwatch.svg);
-    -webkit-mask-image: url(../../assets/icons/stopwatch.svg);
-    background-color: #1D9BA1;
+  bi {
     cursor: pointer;
   }
 }
 
 .leaderboard {
   padding: 5px 30px 50px;
-  margin: 15px;
-  background-color: #F2F2F2;
+  margin: 10px;
+  background-color: var(--board-bg);
+  border: 1px solid  var(--board-br);
   border-radius: 3px;
 }
 
 .leaderboard-header {
   padding: 0 15px;
   margin: 15px;
-  border-left: 2px solid #1CADE4;
+  border-left: 2px solid var(--base);
   font-size: 34px;
-  font-family: Tw Cen MT Condensed, sans-serif;
+  font-family: $font-family-header;
   text-transform: uppercase;
 
   &.main-header {
@@ -83,14 +78,14 @@
 }
 
 .leaderboard-table-header {
-  font-family: Segoe UI, sans-serif;
+  font-family: $font-family;
   text-transform: uppercase;
   font-size: 11px;
   border-radius: 5px;
 
   th {
     border: 0;
-    background-color: #1CADE4;
+    background-color: var(--base);
     color: white;
     text-align: center;
 
@@ -111,16 +106,16 @@
 }
 
 .leaderboard-table-body {
-  font-family: Segoe UI, sans-serif;
+  font-family: $font-family;
   font-size: 18px;
   font-weight: bold;
 
   tr {
     td {
-      color: #1D9BA1;
+      color: var(--brd-other);
 
       a {
-        color: #1D9BA1;
+        color: var(--brd-other);
         text-decoration: none;
       }
     }
@@ -136,38 +131,26 @@
     }
 
     &.place-1 td {
-      color: #2683C6;
+      color: var(--brd-place-1);
 
       a {
-        color: #2683C6;
-      }
-
-      .fastest-solution-icon {
-        background-color: #2683C6;
+        color: var(--brd-place-1);
       }
     }
 
     &.place-2 td {
-      color: #27CED7;
+      color: var(--brd-place-2);
 
       a {
-        color: #27CED7;
-      }
-
-      .fastest-solution-icon {
-        background-color: #27CED7;
+        color: var(--brd-place-2);
       }
     }
 
     &.place-3 td {
-      color: #41BBA7;
+      color: var(--brd-place-3);
 
       a {
-        color: #41BBA7;
-      }
-
-      .fastest-solution-icon {
-        background-color: #41BBA7;
+        color: var(--brd-place-3);
       }
     }
 
@@ -237,7 +220,7 @@
   width: 30%;
   margin: 15vh 0 0 30px;
   padding: 20px;
-  background-color: #1cade41c;
+  background-color: var(--info);
   border-radius: 5px;
   white-space: pre-line;
   font-size: 1.1em;
@@ -253,7 +236,7 @@
   }
 
   .bi-stopwatch {
-    color: #1CADE4;
+    color: var(--base);
   }
 }
 

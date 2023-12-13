@@ -1,0 +1,73 @@
+[data-theme="light"] {
+  --bg: #fff;
+  --base: #1CADE4;
+  --info: #1cade41c;
+  --panel-border: #ccc;
+  --disabled: #999;
+  --board-bg: #F2F2F2;
+  --board-br: #F2F2F2;
+  --menu-bg: #fff;
+  --fast-sol-bg: rgba(255, 255, 255, 0.9);
+  --fast-sol-br: rgba(204, 204, 204, 0.5);
+  --brd-place-1: #2683C6;
+  --brd-place-2: #27CED7;
+  --brd-place-3: #41BBA7;
+  --brd-other: #1D9BA1;
+}
+
+[data-theme="dark"] {
+  --bg: #000;
+  --base: #1CADE4;
+  --info: #1cade41c;
+  --panel-border: #1CADE4;
+  --disabled: #999;
+  --board-bg: var(--bg);
+  --board-br: #1CADE4;
+  --menu-bg: rgb(239, 239, 239);
+  --fast-sol-bg: rgba(0, 0, 0, 0.9);
+  --fast-sol-br: rgba(204, 204, 204, 0.5);
+  --brd-place-1: #00F6FF;
+  --brd-place-2: #00FFF0;
+  --brd-place-3: #B896FF;
+  --brd-other: #7BA8FF;
+  --bs-table-bg: var(--bg);
+  --text-color: rgb(239, 239, 239);
+
+  background-color: var(--bg);
+  color: var(--text-color);
+
+  table {
+    border-color: var(--fast-sol-br);
+    td, th {
+      background-color: var(--bg);
+      color: var(--text-color);
+    }
+  }
+
+  .modal-content {
+    border-color: var(--text-color);
+    background-color: var(--bg);
+    color: var(--text-color);
+
+    .btn-close {
+      background-color: var(--text-color);
+    }
+  }
+
+  .card {
+    border-color: var(--text-color);
+    background-color: var(--bg);
+    color: var(--text-color);
+
+    .card-header {
+      border-color: var(--text-color);
+    }
+  }
+
+  .btn:not(.btn-secondary):not(.btn-primary) {
+    color: var(--text-color);
+  }
+}
+
+$font-family: Segoe UI, sans-serif;
+$font-family-header: Tw Cen MT Condensed, sans-serif;

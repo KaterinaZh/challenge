@@ -21,17 +21,17 @@
         <br/>
         5 extra points for the fastest solution <i class="bi bi-stopwatch"></i>
       </div>
-      <button *ngIf="currentRun" type="button" class="btn btn-secondary" (click)="scroll('tasks-panel')">
+      <button type="button" class="btn btn-secondary" (click)="scroll('tasks-panel')">
         Tasks
       </button>
-      <button *ngIf="currentRun" type="button" class="btn btn-secondary" (click)="scroll('leaderboard-panel')">
+      <button type="button" class="btn btn-secondary" (click)="scroll('leaderboard-panel')">
         Leaderboard
       </button>
       <button type="button" class="btn btn-primary" (click)="goToRegister()">Join the challenge!</button>
     </div>
   </div>
 
-  <div id="tasks-panel" *ngIf="currentRun" class="panel">
+  <div id="tasks-panel" *ngIf="currentRun" class="tasks-panel">
     <div class="row">
       <h4 class="task-header col-9">{{currentRun.description}}</h4>
       <div class="col-3">
@@ -126,7 +126,7 @@
           {{task.points ? task.points : '-'}}
           <span>{{task.fastestSolution ? '+ 5' : ''}}</span>
           <div *ngIf="task.fastestSolution" class="fastest-solution">
-            <div class="fastest-solution-icon"></div>
+            <i class="bi bi-stopwatch"></i>
             <span>{{task.completedAt | date:'medium'}}</span>
           </div>
         </td>

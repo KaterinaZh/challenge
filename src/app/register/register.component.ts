@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
-import { UserService } from '../services/user.service';
+import {Component} from '@angular/core';
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import {Router} from '@angular/router';
+import {UserService} from '../services/user.service';
 
 @Component({
   selector: 'app-register',
@@ -19,10 +19,10 @@ export class RegisterComponent {
     private userService: UserService,
     private router: Router,
   ) {
-    this.isWelcomeScreen = userService.isRegistered();
   }
 
   ngOnInit() {
+    this.isWelcomeScreen = this.userService.isRegistered();
     this.form = this.formBuilder.group({
       firstName: ['', Validators.required],
       lastName: ['', Validators.required],
@@ -41,10 +41,10 @@ export class RegisterComponent {
     this.loading = true;
 
     const {
-      firstName: { value: firstName },
-      lastName: { value: lastName },
-      telescopeLink: { value: telescopeLink },
-      codewarsUsername: { value: codewarsUsername },
+      firstName: {value: firstName},
+      lastName: {value: lastName},
+      telescopeLink: {value: telescopeLink},
+      codewarsUsername: {value: codewarsUsername},
     } = this.form.controls;
 
     this.userService.register({
@@ -53,7 +53,7 @@ export class RegisterComponent {
       telescopeLink,
       codewarsUsername,
     }).subscribe({
-      next: (res) => {
+      next: () => {
         this.loading = false;
         this.showWelcomeScreen();
       },
@@ -66,7 +66,7 @@ export class RegisterComponent {
   }
 
   showWelcomeScreen() {
-    localStorage.setItem('hasRegistered', String(true));
+    this.userService.setRegistered();
     this.isWelcomeScreen = true;
   }
 

@@ -13,6 +13,10 @@
   --brd-place-2: #27CED7;
   --brd-place-3: #41BBA7;
   --brd-other: #1D9BA1;
+
+  .container-fluid {
+    padding: 0;
+  }
 }
 
 [data-theme="dark"] {

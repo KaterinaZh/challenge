@@ -59,12 +59,12 @@
     <div class="row">
       <div
         *ngFor="let task of currentRun.tasks; let i = index"
-        class="col-12 col-sm-12 col-md-3"
+        class="col-12 col-sm-12 col-md"
       >
         <a
           target="_blank"
           href="https://www.codewars.com/kata/{{task.id}}/train/javascript"
-          class="task-container col-3"
+          class="task-container"
         >
           <div class="task">
             <h5 class="task-order">#{{i + 1}}</h5>

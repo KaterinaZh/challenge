@@ -1,11 +1,15 @@
 <div class="container-fluid">
   <app-loader *ngIf="isLoading"></app-loader>
   <div *ngIf="!hasTopPanel">
-    <h1 class="main-header leaderboard-header">JS Coding Challenge</h1>
+    <h1 class="main-header block-header">
+      JS Coding Challenge
+      <br />
+      <p class="main-subheader">Solve the puzzles & win</p>
+    </h1>
   </div>
   <div *ngIf="hasTopPanel" class="top-panel">
     <div class="challenge-background"></div>
-    <h1 class="main-header leaderboard-header">JS Coding Challenge</h1>
+    <h1 class="main-header block-header">JS Coding Challenge</h1>
     <div class="info-panel">
       <div>
         Improve your development skills by passing coding challenge with your colleagues on
@@ -33,9 +37,14 @@
 
   <div id="tasks-panel" *ngIf="currentRun" class="tasks-panel">
     <div class="row">
-      <h4 class="task-header col-9">{{currentRun.description}}</h4>
+      <div class="col-9">
+        <h4 class="block-header">Current run<br />
+          <span class="deadline">{{currentRun.startDate|date:'MMM d'}} -
+          {{currentRun.endDate|date:'medium'}}</span>
+        </h4>
+      </div>
       <div class="col-3">
-        <div ngbDropdown class="d-inline-block float-end" placement="bottom-end">
+        <div ngbDropdown class="d-inline-block float-end run-selector" placement="bottom-end">
           <button type="button" class="btn btn-secondary" id="dropdownRun" ngbDropdownToggle>
             {{currentRun.description}}
           </button>
@@ -47,38 +56,28 @@
         </div>
       </div>
     </div>
-
-    <span class="deadline">{{currentRun.startDate|date:'MMM d'}} -
-      {{currentRun.endDate|date:'medium'}}</span>
-    <table class="table table-bordered">
-      <colgroup>
-        <col span="1" style="width: 10%;">
-        <col span="1" style="width: 70%;">
-        <col span="1" style="width: 20%;">
-      </colgroup>
-      <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">Name</th>
-        <th scope="col">Points</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr *ngFor="let task of currentRun.tasks; let i = index">
-        <th scope="row">{{i + 1}}</th>
-        <td>
-          <a class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-             target="_blank"
-             href="https://www.codewars.com/kata/{{task.id}}/train/javascript">{{task.name}}</a>
-        </td>
-        <td>{{task.points}}</td>
-      </tr>
-      </tbody>
-    </table>
+    <div class="row">
+      <div
+        *ngFor="let task of currentRun.tasks; let i = index"
+        class="col-12 col-sm-12 col-md"
+      >
+        <a
+          target="_blank"
+          href="https://www.codewars.com/kata/{{task.id}}/train/javascript"
+          class="task-container"
+        >
+          <div class="task">
+            <h5 class="task-order">#{{i + 1}}</h5>
+            <span class="task-name">{{task.name}}</span>
+            <span class="task-points">{{task.points}} points</span>
+          </div>
+        </a>
+      </div>
+    </div>
   </div>
 
   <div id="leaderboard-panel" class="leaderboard" *ngIf="currentRun">
-    <h4 class="leaderboard-header">JS Coding Challenge<br/>Leaderboard</h4>
+    <h4 class="block-header">Leaderboard</h4>
 
     <table class="table">
       <thead class="leaderboard-table-header">

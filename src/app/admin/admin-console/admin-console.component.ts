@@ -7,7 +7,6 @@ import {NgbModal} from "@ng-bootstrap/ng-bootstrap";
 import {DeleteModalComponent} from "../delete-modal/delete-modal.component";
 import {AddRunModalComponent} from "../add-run-modal/add-run-modal.component";
 import {EditRunModalComponent} from "../edit-run-modal/edit-run-modal.component";
-import {LeaderboardService} from "../../services/leaderboard.service";
 
 @Component({
   selector: 'app-admin-console',
@@ -26,7 +25,6 @@ export class AdminConsoleComponent implements OnInit {
 
   constructor(
     private adminService: AdminService,
-    private leaderboardService: LeaderboardService,
     private router: Router
   ) {
   }
@@ -121,7 +119,7 @@ export class AdminConsoleComponent implements OnInit {
 
   private initRunList() {
     this.isLoading = true;
-    this.leaderboardService.getRunList().subscribe((runs: Run[]) => {
+    this.adminService.getRunList().subscribe((runs: Run[]) => {
       this.runs = runs;
       if (this.runs.length > 0) {
         this.currentRun = this.runs[this.runs.length - 1];

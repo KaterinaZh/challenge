@@ -1,6 +1,8 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
-import {Observable} from "rxjs";
+import {map, Observable} from "rxjs";
+import {Run, Runs} from "../models/run.model";
+import {Task} from "../models/task.model";
 
 @Injectable({
   providedIn: 'root'
@@ -28,6 +30,21 @@ export class AdminService {
 
   logout() {
     localStorage.removeItem(this.TOKEN);
+  }
+
+  getRunList(): Observable<Run[]> {
+    return this.http.get<Runs>(`${this.RUNS}/all`).pipe(map(runs => runs.runs.map((run, i) => {
+      return {
+        id: run.id,
+        startDate: run.run_start_date,
+        endDate: run.run_end_date,
+        tasks: run.tasks.sort((task1: Task, task2: Task) => {
+          return task1.points - task2.points
+        }),
+        description: `Run ${i + 1}`,
+        index: i
+      };
+    })));
   }
 
   createRun(fromDate: string, toDate: string) {

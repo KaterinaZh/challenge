@@ -4,6 +4,7 @@ import {map, Observable} from "rxjs";
 import {Task, TaskList} from "../models/task.model";
 import {User} from "../models/user.model";
 import {Run, Runs} from "../models/run.model";
+import {LeaderboardBE} from "../models/leaderboard.model";
 
 @Injectable({
   providedIn: 'root'
@@ -11,6 +12,7 @@ import {Run, Runs} from "../models/run.model";
 export class LeaderboardService {
 
   private readonly RUNS = '/api/runs';
+  private readonly LEADERBOARD = '/leaderboard';
   private apiURL = 'https://www.codewars.com/api/v1';
   private dataURL = '../../assets/data';
 
@@ -53,5 +55,9 @@ export class LeaderboardService {
       }
       return userTask;
     });
+  }
+
+  getLeaderboard(runId: number): Observable<LeaderboardBE> {
+    return this.http.get<LeaderboardBE>(`${this.RUNS}/${runId}${this.LEADERBOARD}`);
   }
 }

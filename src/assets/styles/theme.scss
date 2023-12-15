@@ -71,6 +71,10 @@
   .btn:not(.btn-secondary):not(.btn-primary) {
     color: var(--text-color);
   }
+
+  .leaderboard {
+    margin: 20px 0;
+  }
 }
 
 $font-family: Segoe UI, sans-serif;

@@ -49,11 +49,18 @@ export class ChallengeComponent implements OnInit {
 
   public chooseRun(run: Run) {
     this.currentRun = run;
+    this.loadLeaderboard(run.id);
     this.loadUsers();
   }
 
   public showAll() {
     this.sliceEnd = this.usersCount;
+  }
+
+  private loadLeaderboard(runId: number) {
+    this.leaderboardService.getLeaderboard(runId).subscribe(res => {
+      console.log(res);
+    });
   }
 
   private loadUsers() {
@@ -79,6 +86,7 @@ export class ChallengeComponent implements OnInit {
           return;
         })
         this.currentRun = todayRun.length > 0 ? todayRun[0] : this.runs[this.runs.length - 1];
+        this.loadLeaderboard(this.currentRun.id);
       }
       this.loadUsers(); // TODO: remove when leaderboard is ready
       this.isLoading = false;

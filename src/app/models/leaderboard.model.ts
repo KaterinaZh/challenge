@@ -1,3 +1,5 @@
+import {Task} from "./task.model";
+
 /**
  * response from BE
  */
@@ -18,10 +20,12 @@ export interface User {
   photo: string;
   telescopeLink: string;
   codewarsUsername: string;
-  solutions: Solution[];
+  solutions: Solutions;
+  tasks?: Task[]; // set on FE based on solutions.tasks
+  place?: number; // set on FE after sorting by points
 }
 
-export interface Solution {
+export interface Solutions {
   points: number;
   prevPoints: number;
   tasks: Object;

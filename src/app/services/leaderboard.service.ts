@@ -1,10 +1,9 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {map, Observable} from "rxjs";
-import {Task, TaskList} from "../models/task.model";
-import {User} from "../models/user.model";
+import {Task} from "../models/task.model";
 import {Run, Runs} from "../models/run.model";
-import {LeaderboardBE} from "../models/leaderboard.model";
+import {Leaderboard, LeaderboardBE, User} from "../models/leaderboard.model";
 
 @Injectable({
   providedIn: 'root'
@@ -13,18 +12,8 @@ export class LeaderboardService {
 
   private readonly RUNS = '/api/runs';
   private readonly LEADERBOARD = '/leaderboard';
-  private apiURL = 'https://www.codewars.com/api/v1';
-  private dataURL = '../../assets/data';
 
   constructor(private http: HttpClient) {
-  }
-
-  getUserTasksData(userName: string, pageNumber: number): Observable<TaskList> {
-    return this.http.get<TaskList>(`${this.apiURL}/users/${userName}/code-challenges/completed?page=${pageNumber}`);
-  }
-
-  getUsers(): Observable<User[]> {
-    return this.http.get<User[]>(`${this.dataURL}/users.json`);
   }
 
   getRunList(): Observable<Run[]> {
@@ -42,22 +31,32 @@ export class LeaderboardService {
     })));
   }
 
-  getTasksInfoByUserData(taskList: TaskList, tasks: Task[]): Task[] {
-    return tasks.map(task => {
-      const userTask: Task = {...task};
-      const foundTasks: Task[] = taskList.data.filter(userTask => task.id === userTask.id &&
-        (userTask.completedLanguages?.includes('javascript') ||
-          userTask.completedLanguages?.includes('typescript')));
-      if (foundTasks?.length > 0) {
-        userTask.completedAt = foundTasks[0].completedAt;
-      } else {
-        userTask.points = 0;
-      }
-      return userTask;
-    });
+  getLeaderboard(runId: number, tasks: Task[]): Observable<Leaderboard> {
+    return this.http.get<LeaderboardBE>(`${this.RUNS}/${runId}${this.LEADERBOARD}`).pipe(
+      map(res => {
+        res.leaderboard.users = res.leaderboard.users.map(user => {
+          user.tasks = tasks.map(task => {
+            const solvedTask = (user.solutions.tasks as any)[task.id];
+            return solvedTask ? solvedTask : {}
+          });
+          user.place = 1;
+          return user;
+        }).sort((user1: User, user2: User) => {
+          return user2.solutions.points - user1.solutions.points;
+        })
+        this.setPlacesForUsers(res.leaderboard.users);
+        return res.leaderboard;
+      }));
   }
 
-  getLeaderboard(runId: number): Observable<LeaderboardBE> {
-    return this.http.get<LeaderboardBE>(`${this.RUNS}/${runId}${this.LEADERBOARD}`);
+  private setPlacesForUsers(users: User[]) {
+    users.reduce((user1: User, user2: User) => {
+      if (user1.solutions.points === user2.solutions.points) {
+        user2.place = user1.place;
+      } else {
+        user2.place = user1.place ? user1.place + 1 : 1;
+      }
+      return user2;
+    });
   }
 }

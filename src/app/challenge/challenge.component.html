@@ -76,7 +76,7 @@
     </div>
   </div>
 
-  <div id="leaderboard-panel" class="leaderboard" *ngIf="currentRun">
+  <div id="leaderboard-panel" class="leaderboard" *ngIf="currentRun && leaderboard">
     <h4 class="block-header">Leaderboard</h4>
 
     <table class="table">
@@ -94,7 +94,7 @@
       </tr>
       </thead>
       <tbody class="leaderboard-table-body" *ngIf="isLoading">
-      <tr *ngFor="let user of users | slice:0:sliceEnd; let i = index"
+      <tr *ngFor="let user of leaderboard.users | slice:0:sliceEnd; let i = index"
           [ngClass]="{'place-1':i === 0, 'place-2':i === 1, 'place-3':i === 2}">
         <td>{{i + 1}}</td>
         <td class="avatar-col">
@@ -109,28 +109,28 @@
       </tbody>
 
       <tbody class="leaderboard-table-body" *ngIf="!isLoading">
-      <tr *ngFor="let user of users | slice:0:sliceEnd"
+      <tr *ngFor="let user of leaderboard.users | slice:0:sliceEnd"
           [ngClass]="{'place-1':user.place === 1, 'place-2':user.place === 2, 'place-3':user.place === 3}">
         <td>{{user.place}}</td>
         <td class="avatar-col">
-          <img src="/assets/avatars/{{user.nickname}}.jpg" alt="avatar"
+          <img src="/assets/avatars/{{user.codewarsUsername}}.jpg" alt="avatar"
                onerror="this.src='/assets/avatars/default.jpg';">
         </td>
         <td class="align-left">
           <a target="_blank"
-             href="https://telescope.epam.com/who/{{user.name}}">{{user.name}}</a>
+             href="{{user.telescopeLink}}">{{user.firstName}} {{user.lastName}}</a>
         </td>
-        <td class="align-left">{{user.nickname}}</td>
+        <td class="align-left">{{user.codewarsUsername}}</td>
         <td *ngFor="let task of user.tasks">
-          {{task.points ? task.points : '-'}}
-          <span>{{task.fastestSolution ? '+ 5' : ''}}</span>
+          {{task && task.points ? task.points : '-'}}
+          <span>{{task.fastestSolution ? '+ ' + leaderboard.fastestSolutionBonus : ''}}</span>
           <div *ngIf="task.fastestSolution" class="fastest-solution">
             <i class="bi bi-stopwatch"></i>
             <span>{{task.completedAt | date:'medium'}}</span>
           </div>
         </td>
-        <td>{{user.prevPoints}}</td>
-        <td>{{user.total}}</td>
+        <td>{{user.solutions.prevPoints}}</td>
+        <td>{{user.solutions.points}}</td>
       </tr>
       </tbody>
     </table>

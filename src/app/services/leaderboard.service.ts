@@ -44,7 +44,9 @@ export class LeaderboardService {
         }).sort((user1: User, user2: User) => {
           return user2.solutions.points - user1.solutions.points;
         })
-        this.setPlacesForUsers(res.leaderboard.users);
+        if (res.leaderboard.users.length > 0) {
+          this.setPlacesForUsers(res.leaderboard.users);
+        }
         return res.leaderboard;
       }));
   }

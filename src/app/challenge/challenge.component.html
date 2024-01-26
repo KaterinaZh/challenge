@@ -132,6 +132,11 @@
         <td>{{user.solutions.prevPoints}}</td>
         <td>{{user.solutions.points}}</td>
       </tr>
+      <tr class="empty-row" *ngIf="leaderboard.users.length === 0">
+        <td></td>
+        <td colspan="9">No results found. Solve tasks and become first!</td>
+        <td></td>
+      </tr>
       </tbody>
     </table>
 

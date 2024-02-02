@@ -71,7 +71,7 @@ export class ChallengeComponent implements OnInit {
           }
           return;
         })
-        this.currentRun = todayRun.length > 0 ? todayRun[0] : this.runs[this.runs.length - 1];
+        this.currentRun = todayRun.length > 0 ? todayRun[0] : this.runs[0];
         this.loadLeaderboard(this.currentRun.id, this.currentRun.tasks || []);
       }
     });

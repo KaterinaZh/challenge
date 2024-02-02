@@ -17,7 +17,9 @@ export class LeaderboardService {
   }
 
   getRunList(): Observable<Run[]> {
-    return this.http.get<Runs>(this.RUNS).pipe(map(runs => runs.runs.map((run, i) => {
+    return this.http.get<Runs>(this.RUNS).pipe(map(runs => runs.runs.sort((run1, run2) => {
+      return new Date(run1.run_end_date).getTime() - new Date(run2.run_end_date).getTime()
+    }).map((run, i) => {
       return {
         id: run.id,
         startDate: run.run_start_date,

@@ -1,9 +1,9 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {LeaderboardService} from "../services/leaderboard.service";
 import {Task} from "../models/task.model";
 import {Router} from "@angular/router";
 import {Run} from "../models/run.model";
-import {noop} from "rxjs";
+import {Observable, map, noop, timer} from "rxjs";
 import {UserService} from '../services/user.service';
 import {Leaderboard} from "../models/leaderboard.model";
 
@@ -20,6 +20,9 @@ export class ChallengeComponent implements OnInit {
   public sliceEnd: number = 10;
   public hasTopPanel: boolean = false;
   public leaderboard: Leaderboard;
+  public futureRunStart: number;
+  public noCurrentRun: boolean;
+  public remainingTime: Observable<number>;
 
   constructor(
     private leaderboardService: LeaderboardService,
@@ -52,15 +55,21 @@ export class ChallengeComponent implements OnInit {
   }
 
   private loadLeaderboard(runId: number, tasks: Task[]) {
-    this.leaderboardService.getLeaderboard(runId, tasks).subscribe(res => {
-      this.leaderboard = res;
-      this.usersCount = res.users.length;
+    try {
+      this.leaderboardService.getLeaderboard(runId, tasks).subscribe(res => {
+        this.leaderboard = res;
+        this.usersCount = res.users.length;
+        this.isLoading = false;
+      });
+    } catch (err) {
+      console.log(err);
       this.isLoading = false;
-    });
+    }
   }
 
   private initRunList() {
     this.isLoading = true;
+
     this.leaderboardService.getRunList().subscribe((runs: Run[]) => {
       this.runs = runs;
       if (this.runs.length > 0) {
@@ -74,6 +83,14 @@ export class ChallengeComponent implements OnInit {
         this.currentRun = todayRun.length > 0 ? todayRun[0] : this.runs[this.runs.length - 1];
         this.loadLeaderboard(this.currentRun.id, this.currentRun.tasks || []);
       }
+    }, (error) => {
+      this.isLoading = false;
+      this.futureRunStart = error.error.closestRunStartDate;
+      this.noCurrentRun = true;
+
+      this.remainingTime = timer(0, 1000).pipe(map(() => {
+        return new Date(this.futureRunStart).getTime() - new Date().getTime();
+      }));
     });
   }
 }

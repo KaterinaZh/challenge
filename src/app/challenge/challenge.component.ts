@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {LeaderboardService} from "../services/leaderboard.service";
 import {Task} from "../models/task.model";
 import {Router} from "@angular/router";
@@ -16,10 +16,9 @@ export class ChallengeComponent implements OnInit {
   public isLoading: boolean;
   public runs: Run[] = [];
   public currentRun: Run;
-  public usersCount: number = 0;
-  public sliceEnd: number = 10;
   public hasTopPanel: boolean = false;
   public leaderboard: Leaderboard;
+  public leaderboardOfWeek: Leaderboard;
   public futureRunStart: number;
   public noCurrentRun: boolean;
   public remainingTime: Observable<number>;
@@ -50,15 +49,11 @@ export class ChallengeComponent implements OnInit {
     this.loadLeaderboard(run.id, run.tasks || []);
   }
 
-  public showAll() {
-    this.sliceEnd = this.usersCount;
-  }
-
   private loadLeaderboard(runId: number, tasks: Task[]) {
     try {
-      this.leaderboardService.getLeaderboard(runId, tasks).subscribe(res => {
-        this.leaderboard = res;
-        this.usersCount = res.users.length;
+      this.leaderboardService.getLeaderboard(runId).subscribe(res => {
+        this.leaderboard = this.leaderboardService.getLeaderboardFull(tasks, res);
+        this.leaderboardOfWeek = this.leaderboardService.getLeaderboardOfWeek(tasks, res);
         this.isLoading = false;
       });
     } catch (err) {

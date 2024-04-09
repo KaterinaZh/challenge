@@ -1,0 +1,178 @@
+@import '../../../assets/styles/theme';
+
+.fastest-solution {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  margin-left: 3px;
+  cursor: pointer;
+
+  span {
+    display: none;
+  }
+
+  &:hover span {
+    position: absolute;
+    display: block;
+    width: 100px;
+    bottom: 25px;
+    left: -40px;
+    font-size: 12px;
+    font-weight: 500;
+    background-color: var(--fast-sol-bg);
+    border: 1px solid var(--fast-sol-br);
+    border-radius: 5px;
+    opacity: 50;
+  }
+
+  bi {
+    cursor: pointer;
+  }
+}
+
+.leaderboard {
+  padding: 5px 45px;
+  background-color: var(--board-bg);
+  border: 1px solid  var(--board-br);
+  border-radius: 3px;
+
+  &-b {
+    padding-bottom: 50px;
+  }
+}
+
+.block-header {
+  padding: 0 15px;
+  margin: 15px;
+  border-left: 2px solid var(--base);
+  font-size: 34px;
+  font-family: $font-family-header;
+  text-transform: uppercase;
+
+  &.main-header {
+    font-size: 4em;
+    padding: 15px;
+    margin: 15px 60px;
+    .main-subheader {
+      font-size: 0.5em;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.leaderboard-table-header {
+  font-family: $font-family;
+  text-transform: uppercase;
+  font-size: 11px;
+  border-radius: 5px;
+
+  th {
+    border: 0;
+    background-color: var(--base);
+    color: white;
+    text-align: center;
+
+    &:first-child {
+      border-bottom-left-radius: 20px;
+      border-top-left-radius: 20px;
+    }
+
+    &:last-child {
+      border-bottom-right-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+
+    &.align-left {
+      text-align: left;
+    }
+  }
+}
+
+.leaderboard-table-body {
+  font-family: $font-family;
+  font-size: 18px;
+  font-weight: bold;
+
+  tr {
+    td {
+      color: var(--brd-other);
+
+      a {
+        color: var(--brd-other);
+        text-decoration: none;
+      }
+    }
+
+    &:first-child td {
+      &:first-child {
+        border-top-left-radius: 20px;
+      }
+
+      &:last-child {
+        border-top-right-radius: 20px;
+      }
+    }
+
+    &.place-1 td {
+      color: var(--brd-place-1);
+
+      a {
+        color: var(--brd-place-1);
+      }
+    }
+
+    &.place-2 td {
+      color: var(--brd-place-2);
+
+      a {
+        color: var(--brd-place-2);
+      }
+    }
+
+    &.place-3 td {
+      color: var(--brd-place-3);
+
+      a {
+        color: var(--brd-place-3);
+      }
+    }
+
+    &:last-child td {
+      border: 0;
+
+      &:first-child {
+        border-bottom-left-radius: 20px;
+      }
+
+      &:last-child {
+        border-bottom-right-radius: 20px;
+      }
+    }
+  }
+
+  td {
+    text-align: center;
+    vertical-align: middle;
+
+    &:last-child, &:first-child {
+      font-size: 25px;
+    }
+
+    &.align-left {
+      text-align: left;
+    }
+  }
+
+  .avatar-col {
+    padding: 0;
+
+    img {
+      width: 50px;
+      border-radius: 50%;
+    }
+  }
+}
+
+.empty-row {
+  height: 100px;
+}

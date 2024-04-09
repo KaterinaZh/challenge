@@ -16,6 +16,7 @@ import {AuthInterceptor} from "./http-interceptors/auth-interceptor";
 import {DeleteModalComponent} from "./admin/delete-modal/delete-modal.component";
 import {EditRunModalComponent} from "./admin/edit-run-modal/edit-run-modal.component";
 import { RegisterComponent } from './register/register.component';
+import { LeaderboardComponent } from './challenge/leaderboard/leaderboard.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { RegisterComponent } from './register/register.component';
     AddRunModalComponent,
     EditRunModalComponent,
     DeleteModalComponent,
-    RegisterComponent
+    RegisterComponent,
+    LeaderboardComponent
   ],
   imports: [
     BrowserModule,

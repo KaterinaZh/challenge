@@ -33,24 +33,54 @@ export class LeaderboardService {
     })));
   }
 
-  getLeaderboard(runId: number, tasks: Task[]): Observable<Leaderboard> {
+  getLeaderboard(runId: number): Observable<Leaderboard> {
     return this.http.get<LeaderboardBE>(`${this.RUNS}/${runId}${this.LEADERBOARD}`).pipe(
-      map(res => {
-        res.leaderboard.users = res.leaderboard.users.map(user => {
-          user.tasks = tasks.map(task => {
-            const solvedTask = (user.solutions.tasks as any)[task.id];
-            return solvedTask ? solvedTask : {}
-          });
-          user.place = 1;
-          return user;
-        }).sort((user1: User, user2: User) => {
-          return user2.solutions.points - user1.solutions.points;
-        })
-        if (res.leaderboard.users.length > 0) {
-          this.setPlacesForUsers(res.leaderboard.users);
-        }
-        return res.leaderboard;
-      }));
+      map(res => res.leaderboard));
+  }
+
+  getLeaderboardFull(tasks: Task[], l: Leaderboard): Leaderboard {
+    const leaderboard: Leaderboard = JSON.parse(JSON.stringify(l));
+    leaderboard.users = leaderboard.users.map(user => {
+      user.tasks = tasks.map(task => {
+        const solvedTask = (user.solutions.tasks as any)[task.id];
+        return solvedTask ? solvedTask : {}
+      });
+      user.place = 1;
+      return user;
+    }).sort((user1: User, user2: User) => {
+      return user2.solutions.points - user1.solutions.points;
+    });
+    if (leaderboard.users.length > 0) {
+      this.setPlacesForUsers(leaderboard.users);
+    }
+    return leaderboard;
+  }
+
+  getLeaderboardOfWeek(tasks: Task[], l: Leaderboard): Leaderboard {
+    const leaderboard: Leaderboard = JSON.parse(JSON.stringify(l));
+    leaderboard.users =  leaderboard.users.map(user => {
+      user.tasks = tasks.map(task => {
+        const solvedTask = (user.solutions.tasks as any)[task.id];
+        return solvedTask ? solvedTask : {}
+      });
+      user.place = 1;
+      user.solutions.points = user.solutions.points - user.solutions.prevPoints;
+      user.solutions.prevPoints = 0;
+      return user;
+    }).sort((user1: User, user2: User) => {
+      return user2.solutions.points - user1.solutions.points;
+    });
+    if (leaderboard.users.length > 0) {
+      this.setPlacesForUsers(leaderboard.users);
+    }
+    leaderboard.users = leaderboard.users.filter(u => {
+      if (u.solutions.points > 0) {
+        return u;
+      }
+      return;
+    });
+    // leaderboard.users.forEach(u => console.log(u.firstName + ' ' + u.lastName))
+    return leaderboard;
   }
 
   private setPlacesForUsers(users: User[]) {

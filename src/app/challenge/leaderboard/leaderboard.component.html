@@ -1,0 +1,68 @@
+<div class="leaderboard" [ngClass]="{'leaderboard-b':usersCount > 0 && sliceEnd < usersCount}">
+  <h4 class="block-header">{{header}}</h4>
+
+  <table class="table">
+    <thead class="leaderboard-table-header">
+    <tr>
+      <th scope="col">Place</th>
+      <th scope="col"></th>
+      <th scope="col" class="align-left">Name</th>
+      <th scope="col" class="align-left">Nickname</th>
+      <th *ngFor="let task of currentRun.tasks; let i = index">
+        Task {{i + 1}}
+      </th>
+      <th scope="col" *ngIf="!isWeekBoard">Other runs</th>
+      <th scope="col">Total</th>
+    </tr>
+    </thead>
+    <tbody class="leaderboard-table-body" *ngIf="isLoading">
+    <tr *ngFor="let user of leaderboard.users | slice:0:sliceEnd; let i = index"
+        [ngClass]="{'place-1':i === 0, 'place-2':i === 1, 'place-3':i === 2}">
+      <td>{{i + 1}}</td>
+      <td class="avatar-col">
+        <img src="/assets/avatars/default.jpg" alt="avatar">
+      </td>
+      <td class="align-left">...</td>
+      <td class="align-left">...</td>
+      <td *ngFor="let task of user.tasks">-</td>
+      <td *ngIf="!isWeekBoard">0</td>
+      <td>0</td>
+    </tr>
+    </tbody>
+
+    <tbody class="leaderboard-table-body" *ngIf="!isLoading">
+    <tr *ngFor="let user of leaderboard.users | slice:0:sliceEnd"
+        [ngClass]="{'place-1':user.place === 1, 'place-2':user.place === 2, 'place-3':user.place === 3}">
+      <td>{{user.place}}</td>
+      <td class="avatar-col">
+        <img src="/assets/avatars/{{user.codewarsUsername}}.jpg" alt="avatar"
+             onerror="this.src='/assets/avatars/default.jpg';">
+      </td>
+      <td class="align-left">
+        <a target="_blank"
+           href="{{user.telescopeLink}}">{{user.firstName}} {{user.lastName}}</a>
+      </td>
+      <td class="align-left">{{user.codewarsUsername}}</td>
+      <td *ngFor="let task of user.tasks">
+        {{task && task.points ? task.points : '-'}}
+        <span>{{task.fastestSolution ? '+ ' + leaderboard.fastestSolutionBonus : ''}}</span>
+        <div *ngIf="task.fastestSolution" class="fastest-solution">
+          <i class="bi bi-stopwatch"></i>
+          <span>{{task.completedAt | date:'medium'}}</span>
+        </div>
+      </td>
+      <td *ngIf="!isWeekBoard">{{user.solutions.prevPoints}}</td>
+      <td>{{user.solutions.points}}</td>
+    </tr>
+    <tr class="empty-row" *ngIf="leaderboard.users.length === 0">
+      <td></td>
+      <td colspan="9">No results found. Solve tasks and become first!</td>
+      <td></td>
+    </tr>
+    </tbody>
+  </table>
+
+  <button *ngIf="usersCount > 0 && sliceEnd < usersCount"
+          type="button" class="btn btn-primary float-end" (click)="showAll()">Show all
+  </button>
+</div>

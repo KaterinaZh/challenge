@@ -45,8 +45,9 @@ export class AdminService {
         tasks: run.tasks.sort((task1: Task, task2: Task) => {
           return task1.points - task2.points
         }),
-        description: `Run ${i + 1}`,
-        index: i
+        description: `Week ${i + 1}`,
+        index: i,
+        links: []
       };
     })));
   }

@@ -1,0 +1,35 @@
+<div class="d-flex min-vh-100 justify-content-center align-items-center">
+  <app-loader *ngIf="isLoading"></app-loader>
+  <div class="card col-11 col-md-6" *ngIf="!isLoading">
+    <h4 class="card-header">{{currentRun.description}}</h4>
+    <div class="card-body">
+      <div class="info-text-container">
+        <img class="info-image" src="../../assets/images/hangover_math.gif"/>
+        <p class="align-self-start">
+          <b>Before solving tasks</b> - here are additional materials for this week:
+        </p>
+        <p>
+        <ng-container *ngFor="let link of currentRun.links; let i = index">
+          <a class="d-flex" target="_blank" href="{{link}}">{{link}}</a>
+        </ng-container>
+        </p>
+        <p>
+          <b>After solving tasks</b> - here are solved solutions for this week's tasks, you can check and compare your solution with it:
+        </p>
+        <p>
+        <ng-container *ngFor="let task of currentRun.tasks; let i = index">
+          <a class="d-flex" target="_blank"
+             href="https://www.codewars.com/kata/{{task.id}}/solutions/javascript">#{{i + 1}} {{task.name}}</a>
+        </ng-container>
+        </p>
+        <p>
+          Please, press the following button to go to the main page - there you can find all the tasks & our current
+          leaders!
+        </p>
+        <button class="btn btn-primary align-self-center" (click)="redirectToHomePage()">
+          Go to the leaderboard
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

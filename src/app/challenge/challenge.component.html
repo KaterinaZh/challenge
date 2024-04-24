@@ -19,11 +19,9 @@
         platform that
         continuously push your coding practice!
         <br/><br/>
-        8 weeks duration of challenge
+        6 weeks duration of challenge
         <br/>
         5 tasks in different levels/points each week
-        <br/>
-        5 extra points for the fastest solution <i class="bi bi-stopwatch"></i>
       </div>
       <button type="button" class="btn btn-secondary" (click)="scroll('tasks-panel')">
         Tasks
@@ -38,7 +36,12 @@
   <div id="tasks-panel" *ngIf="currentRun" class="tasks-panel">
     <div class="row">
       <div class="col-9">
-        <h4 class="block-header">Current run<br />
+        <h4 class="block-header">Current week
+          <button type="button" class="btn btn-mortarboard" (click)="toInfo(currentRun.id)"
+                  ngbTooltip="Read additional info">
+            <i class="bi bi-mortarboard-fill"></i>
+          </button>
+          <br />
           <span class="deadline">{{currentRun.startDate|date:'MMM d'}} -
           {{currentRun.endDate|date:'medium'}}</span>
         </h4>
@@ -92,7 +95,7 @@
 
   <div id="tasks-panel" *ngIf="!!futureRunStart" class="future-run-promo">
     <div>
-      <p class="remaining-time-title">Our first run will start very soon!</p>
+      <p class="remaining-time-title">Our challenge will start very soon!</p>
       <p class="remaining-time">
         {{ remainingTime | async | date:'d' }} days,
         {{ remainingTime | async | date:'h' }} hours,

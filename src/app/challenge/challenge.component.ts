@@ -32,11 +32,17 @@ export class ChallengeComponent implements OnInit {
 
   ngOnInit() {
     this.hasTopPanel = !this.userService.isRegistered();
-    this.initRunList();
+    // TODO: remove addTimer() and return initRunList()
+    // this.initRunList();
+    this.addTimer();
   }
 
   public goToRegister() {
     this.router.navigate(['/register']);
+  }
+
+  public toInfo(id: number) {
+    this.router.navigate(['/info/'+ id]);
   }
 
   public scroll(id: string) {
@@ -47,6 +53,14 @@ export class ChallengeComponent implements OnInit {
   public chooseRun(run: Run) {
     this.currentRun = run;
     this.loadLeaderboard(run.id, run.tasks || []);
+  }
+
+  private addTimer() {
+    this.futureRunStart = Date.parse('2024-04-29T00:00:00.000Z');
+    this.noCurrentRun = true;
+    this.remainingTime = timer(0, 1000).pipe(map(() => {
+      return new Date(this.futureRunStart).getTime() - new Date().getTime();
+    }));
   }
 
   private loadLeaderboard(runId: number, tasks: Task[]) {

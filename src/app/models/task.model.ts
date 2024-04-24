@@ -4,5 +4,4 @@ export interface Task {
   completedAt?: string;
   completedLanguages?: string[];
   points: number;
-  fastestSolution?: boolean;
 }

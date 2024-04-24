@@ -27,5 +27,6 @@ export interface Run {
   index: number;
   startDate: string;
   endDate: string;
+  links: string[],
   tasks?: Task[];
 }

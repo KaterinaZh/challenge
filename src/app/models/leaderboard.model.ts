@@ -9,7 +9,6 @@ export interface LeaderboardBE {
 
 export interface Leaderboard {
   leaderboardUpdatedDate: Date;
-  fastestSolutionBonus: number;
   users: User[];
 }
 

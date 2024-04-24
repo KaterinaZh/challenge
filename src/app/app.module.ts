@@ -17,6 +17,7 @@ import {DeleteModalComponent} from "./admin/delete-modal/delete-modal.component"
 import {EditRunModalComponent} from "./admin/edit-run-modal/edit-run-modal.component";
 import { RegisterComponent } from './register/register.component';
 import { LeaderboardComponent } from './challenge/leaderboard/leaderboard.component';
+import { InfoComponent } from './info/info.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { LeaderboardComponent } from './challenge/leaderboard/leaderboard.compon
     EditRunModalComponent,
     DeleteModalComponent,
     RegisterComponent,
-    LeaderboardComponent
+    LeaderboardComponent,
+    InfoComponent
   ],
   imports: [
     BrowserModule,

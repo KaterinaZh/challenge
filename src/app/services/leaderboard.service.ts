@@ -12,6 +12,25 @@ export class LeaderboardService {
 
   private readonly RUNS = '/api/runs';
   private readonly LEADERBOARD = '/leaderboard';
+  private readonly weekNames: { name: string, links: string[] }[] =
+    [
+      {
+        name: 'Fundamentals',
+        links: ['https://javascript.info/first-steps',
+          'https://javascript.info/data-types',
+          'https://developer.mozilla.org/en-US/curriculum/core/javascript-fundamentals/',
+          'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures',
+          'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array'
+        ]
+      },
+      {name: 'OOP', links: []},
+      {name: 'Functional Programming', links: []},
+      {name: 'Regular Expressions', links: []},
+      {name: 'Security & Cryptography', links: []},
+      {name: 'Performance', links: []},
+      {name: '', links: []},
+      {name: '', links: []}];
+
 
   constructor(private http: HttpClient) {
   }
@@ -27,8 +46,9 @@ export class LeaderboardService {
         tasks: run.tasks.sort((task1: Task, task2: Task) => {
           return task1.points - task2.points
         }),
-        description: `Run ${i + 1}`,
-        index: i
+        description: `Week ${i + 1} ${this.weekNames[i]?.name ? '- ' + this.weekNames[i].name : ''}`,
+        index: i,
+        links: this.weekNames[i] ? this.weekNames[i].links : []
       };
     })));
   }
@@ -58,7 +78,7 @@ export class LeaderboardService {
 
   getLeaderboardOfWeek(tasks: Task[], l: Leaderboard): Leaderboard {
     const leaderboard: Leaderboard = JSON.parse(JSON.stringify(l));
-    leaderboard.users =  leaderboard.users.map(user => {
+    leaderboard.users = leaderboard.users.map(user => {
       user.tasks = tasks.map(task => {
         const solvedTask = (user.solutions.tasks as any)[task.id];
         return solvedTask ? solvedTask : {}

@@ -1,5 +1,6 @@
-<div class="leaderboard" [ngClass]="{'leaderboard-b':usersCount > 0 && sliceEnd < usersCount}">
-  <h4 class="block-header">{{header}}</h4>
+<div class="leaderboard"
+     [ngClass]="{'leaderboard-b':leaderboard.users.length > 0 && sliceEnd < leaderboard.users.length}">
+  <h4 class="block-header">{{isWeekBoard ? 'Leaders of ' + currentRun.description : 'Leaderboard'}}</h4>
 
   <table class="table">
     <thead class="leaderboard-table-header">
@@ -11,7 +12,7 @@
       <th *ngFor="let task of currentRun.tasks; let i = index">
         Task {{i + 1}}
       </th>
-      <th scope="col" *ngIf="!isWeekBoard">Other runs</th>
+      <th scope="col" *ngIf="!isWeekBoard">Other weeks</th>
       <th scope="col">Total</th>
     </tr>
     </thead>
@@ -45,11 +46,6 @@
       <td class="align-left">{{user.codewarsUsername}}</td>
       <td *ngFor="let task of user.tasks">
         {{task && task.points ? task.points : '-'}}
-        <span>{{task.fastestSolution ? '+ ' + leaderboard.fastestSolutionBonus : ''}}</span>
-        <div *ngIf="task.fastestSolution" class="fastest-solution">
-          <i class="bi bi-stopwatch"></i>
-          <span>{{task.completedAt | date:'medium'}}</span>
-        </div>
       </td>
       <td *ngIf="!isWeekBoard">{{user.solutions.prevPoints}}</td>
       <td>{{user.solutions.points}}</td>
@@ -62,7 +58,7 @@
     </tbody>
   </table>
 
-  <button *ngIf="usersCount > 0 && sliceEnd < usersCount"
+  <button *ngIf="leaderboard.users.length > 0 && sliceEnd < leaderboard.users.length"
           type="button" class="btn btn-primary float-end" (click)="showAll()">Show all
   </button>
 </div>

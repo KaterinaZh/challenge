@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {Run} from "../../models/run.model";
 import {Leaderboard} from "../../models/leaderboard.model";
 
@@ -7,23 +7,14 @@ import {Leaderboard} from "../../models/leaderboard.model";
   templateUrl: './leaderboard.component.html',
   styleUrls: ['./leaderboard.component.scss']
 })
-export class LeaderboardComponent implements OnInit {
+export class LeaderboardComponent {
   @Input() isLoading: boolean;
   @Input() currentRun: Run;
   @Input() leaderboard: Leaderboard;
   @Input() isWeekBoard: boolean;
-  public usersCount: number = 0;
   public sliceEnd: number = 10;
-  public header = 'Leaderboard';
-
-  ngOnInit(): void {
-    this.usersCount = this.leaderboard.users.length;
-    if (this.isWeekBoard) {
-      this.header = 'Leaders of the week';
-    }
-  }
 
   public showAll() {
-    this.sliceEnd = this.usersCount;
+    this.sliceEnd = this.leaderboard.users.length;
   }
 }

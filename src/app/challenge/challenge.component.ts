@@ -56,7 +56,7 @@ export class ChallengeComponent implements OnInit {
   }
 
   private addTimer() {
-    this.futureRunStart = Date.parse('2024-04-29T00:00:00.000Z');
+    this.futureRunStart = Date.parse('2024-04-28T00:00:00.000Z');
     this.noCurrentRun = true;
     this.remainingTime = timer(0, 1000).pipe(map(() => {
       return new Date(this.futureRunStart).getTime() - new Date().getTime();

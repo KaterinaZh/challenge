@@ -3,9 +3,48 @@ import {LeaderboardService} from "../services/leaderboard.service";
 import {Task} from "../models/task.model";
 import {Router} from "@angular/router";
 import {Run} from "../models/run.model";
-import {Observable, map, noop, timer} from "rxjs";
+import {Observable, interval, map, noop, shareReplay, timer} from "rxjs";
 import {UserService} from '../services/user.service';
 import {Leaderboard} from "../models/leaderboard.model";
+
+interface TimeComponents {
+  secondsToDday: number;
+  minutesToDday: number;
+  hoursToDday: number;
+  daysToDday: number;
+}
+
+function calcDateDiff(endDay: Date = new Date(2022, 0, 1)): TimeComponents {
+  const dDay = endDay.valueOf();
+
+  const milliSecondsInASecond = 1000;
+  const hoursInADay = 24;
+  const minutesInAnHour = 60;
+  const secondsInAMinute = 60;
+
+  const timeDifference = dDay - Date.now();
+
+  const daysToDday = Math.floor(
+    timeDifference /
+      (milliSecondsInASecond * minutesInAnHour * secondsInAMinute * hoursInADay)
+  );
+
+  const hoursToDday = Math.floor(
+    (timeDifference /
+      (milliSecondsInASecond * minutesInAnHour * secondsInAMinute)) %
+      hoursInADay
+  );
+
+  const minutesToDday = Math.floor(
+    (timeDifference / (milliSecondsInASecond * minutesInAnHour)) %
+      secondsInAMinute
+  );
+
+  const secondsToDday =
+    Math.floor(timeDifference / milliSecondsInASecond) % secondsInAMinute;
+
+  return { secondsToDday, minutesToDday, hoursToDday, daysToDday };
+}
 
 @Component({
   selector: 'app-challenge',
@@ -19,9 +58,9 @@ export class ChallengeComponent implements OnInit {
   public hasTopPanel: boolean = false;
   public leaderboard: Leaderboard;
   public leaderboardOfWeek: Leaderboard;
-  public futureRunStart: number;
+  public futureRunStart: Date;
   public noCurrentRun: boolean;
-  public remainingTime: Observable<number>;
+  public remainingTime: Observable<TimeComponents>;
 
   constructor(
     private leaderboardService: LeaderboardService,
@@ -32,9 +71,7 @@ export class ChallengeComponent implements OnInit {
 
   ngOnInit() {
     this.hasTopPanel = !this.userService.isRegistered();
-    // TODO: remove addTimer() and return initRunList()
-    // this.initRunList();
-    this.addTimer();
+    this.initRunList();
   }
 
   public goToRegister() {
@@ -53,14 +90,6 @@ export class ChallengeComponent implements OnInit {
   public chooseRun(run: Run) {
     this.currentRun = run;
     this.loadLeaderboard(run.id, run.tasks || []);
-  }
-
-  private addTimer() {
-    this.futureRunStart = Date.parse('2024-04-28T00:00:00.000Z');
-    this.noCurrentRun = true;
-    this.remainingTime = timer(0, 1000).pipe(map(() => {
-      return new Date(this.futureRunStart).getTime() - new Date().getTime();
-    }));
   }
 
   private loadLeaderboard(runId: number, tasks: Task[]) {
@@ -94,12 +123,13 @@ export class ChallengeComponent implements OnInit {
       }
     }, (error) => {
       this.isLoading = false;
-      this.futureRunStart = error.error.closestRunStartDate;
+      this.futureRunStart = new Date(error.error.closestRunStartDate);
       this.noCurrentRun = true;
 
-      this.remainingTime = timer(0, 1000).pipe(map(() => {
-        return new Date(this.futureRunStart).getTime() - new Date().getTime();
-      }));
+      this.remainingTime = interval(1000).pipe(
+        map(() => calcDateDiff(this.futureRunStart)),
+        shareReplay(1)
+      );
     });
   }
 }

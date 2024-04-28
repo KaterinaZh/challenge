@@ -96,11 +96,11 @@
   <div id="tasks-panel" *ngIf="!!futureRunStart" class="future-run-promo">
     <div>
       <p class="remaining-time-title">Our challenge will start very soon!</p>
-      <p class="remaining-time">
-        {{ remainingTime | async | date:'d' }} days,
-        {{ remainingTime | async | date:'H' }} hours,
-        {{ remainingTime | async | date:'m' }} minutes,
-        {{ remainingTime | async | date:'s' }} seconds
+      <p class="remaining-time" *ngIf="(remainingTime | async) as t">
+        <span *ngIf="t.daysToDday > 0">{{ t.daysToDday }} days,</span>
+        {{ t.hoursToDday }} hours,
+        {{ t.minutesToDday }} minutes,
+        {{ t.secondsToDday }} seconds
       </p>
     </div>
   </div>

@@ -23,7 +23,15 @@ export class LeaderboardService {
           'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array'
         ]
       },
-      {name: 'OOP', links: []},
+      {
+        name: 'OOP', links: [
+          'https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_programming',
+          'https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Classes_in_JavaScript',
+          'https://www.freecodecamp.org/news/object-oriented-programming-javascript/',
+          'https://javascript.info/classes',
+          'https://www.geeksforgeeks.org/introduction-object-oriented-programming-javascript/'
+        ]
+      },
       {name: 'Functional Programming', links: []},
       {name: 'Regular Expressions', links: []},
       {name: 'Security & Cryptography', links: []},

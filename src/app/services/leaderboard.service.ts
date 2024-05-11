@@ -32,7 +32,14 @@ export class LeaderboardService {
           'https://www.geeksforgeeks.org/introduction-object-oriented-programming-javascript/'
         ]
       },
-      {name: 'Functional Programming', links: []},
+      {name: 'Functional Programming', links: [
+        'https://dev.to/jamesrweb/principles-of-functional-programming-4b7c',
+        'https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function',
+        'https://dev.to/biomathcode/composition-of-functions-178g',
+        'https://dev.to/sundarbadagala081/javascript-chaining-3h6g',
+        'https://javascript.info/currying-partials',
+        'https://javascript.info/generators'
+      ]},
       {name: 'Regular Expressions', links: []},
       {name: 'Security & Cryptography', links: []},
       {name: 'Performance', links: []},

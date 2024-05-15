@@ -40,7 +40,14 @@ export class LeaderboardService {
         'https://javascript.info/currying-partials',
         'https://javascript.info/generators'
       ]},
-      {name: 'Regular Expressions', links: []},
+      {
+        name: 'Regular Expressions', links: [
+          'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp',
+          'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions',
+          'https://www.w3schools.com/jsref/jsref_obj_regexp.asp',
+          'https://regex101.com/'
+        ]
+      },
       {name: 'Security & Cryptography', links: []},
       {name: 'Performance', links: []},
       {name: '', links: []},

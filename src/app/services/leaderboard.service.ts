@@ -48,7 +48,14 @@ export class LeaderboardService {
           'https://regex101.com/'
         ]
       },
-      {name: 'Security & Cryptography', links: []},
+      {
+        name: 'Security & Cryptography', links: [
+          'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions',
+          'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charCodeAt',
+          'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fromCharCode',
+          'https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math'
+        ]
+      },
       {name: 'Performance', links: []},
       {name: '', links: []},
       {name: '', links: []}];

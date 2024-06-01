@@ -56,7 +56,12 @@ export class LeaderboardService {
           'https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math'
         ]
       },
-      {name: 'Performance', links: []},
+      {name: 'Performance', links: [
+        'https://developer.mozilla.org/en-US/docs/Learn/Performance/JavaScript',
+        'https://en.wikipedia.org/wiki/Algorithmic_efficiency',
+        'https://medium.com/quick-code/considering-optimization-and-time-complexity-with-js-algorithms-4c8915086518',
+        'https://medium.com/@feelwjd/7-algorithms-in-javascript-1274dec046d1'
+      ]},
       {name: '', links: []},
       {name: '', links: []}];
 

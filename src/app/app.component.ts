@@ -8,7 +8,7 @@ import {UserService} from "./services/user.service";
 })
 export class AppComponent {
   title = 'challenge';
-  public isLightTheme: boolean = true;
+  public isLightTheme: boolean = false;
 
   constructor(
     private userService: UserService

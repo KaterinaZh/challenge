@@ -1,6 +1,6 @@
 [data-theme="light"] {
   --bg: #fff;
-  --base: #1CADE4;
+  --base: #EE56A3;
   --info: #1cade41c;
   --panel-border: #ccc;
   --disabled: #999;
@@ -13,6 +13,7 @@
   --brd-place-2: #27CED7;
   --brd-place-3: #41BBA7;
   --brd-other: #1D9BA1;
+  --btn-border: #616A80;
 
   .container-fluid {
     padding: 0;
@@ -20,8 +21,8 @@
 }
 
 [data-theme="dark"] {
-  --bg: #000;
-  --base: #1CADE4;
+  --bg: #1C0D35;
+  --base: #EE56A3;
   --info: #1cade41c;
   --panel-border: #1CADE4;
   --disabled: #999;
@@ -36,6 +37,7 @@
   --brd-other: #7BA8FF;
   --bs-table-bg: var(--bg);
   --text-color: rgb(239, 239, 239);
+  --btn-border: #616A80;
 
   background-color: var(--bg);
   color: var(--text-color);
@@ -77,5 +79,5 @@
   }
 }
 
-$font-family: Segoe UI, sans-serif;
-$font-family-header: Tw Cen MT Condensed, sans-serif;
+$font-family: Archivo Expanded, sans-serif;
+$font-family-header: Archivo Expanded, sans-serif;

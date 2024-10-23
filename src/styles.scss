@@ -6,35 +6,46 @@
 @import 'assets/styles/theme';
 
 @font-face {
-  font-family: 'Tw Cen MT Condensed';
-  src: url('/assets/fonts/Tw Cen MT Condensed.ttf');
+  font-family: 'Archivo Expanded';
+  src: url('/assets/fonts/Archivo Expanded.ttf');
 }
 
 @font-face {
-  font-family: 'Segoe UI';
-  src: url('/assets/fonts/Segoe UI.ttf');
-}
-
-@font-face {
-  font-family: "Segoe UI";
-  src: url("/assets/fonts/Segoe UI Bold.ttf");
+  font-family: "Archivo Expanded";
+  src: url("/assets/fonts/Archivo Expanded Bold.ttf");
   font-weight: bold;
 }
 
-.btn-primary, .btn-primary:hover {
-  color: var(--bg);
-  background-color: var(--base);
-  border: 0;
+@font-face {
+  font-family: "Archivo Expanded";
+  src: url("/assets/fonts/Archivo Expanded Thin.ttf");
+  font-weight: 250;
 }
 
-.btn-secondary, .btn-secondary:hover {
-  background-color: var(--bg);
-  border: 1px solid var(--base);
+.btn-primary, .btn-primary:hover {
+  font-size: 0.6em;
+  padding-bottom: 20px;
+  background: none!important;
+  border: none;
+  border-radius: 0;
+  border-bottom: 10px solid var(--base);
+  text-transform: uppercase;
   color: var(--base);
+}
 
-  &:active {
-    border: 1px solid var(--base);
-    background-color: var(--base);
+.btn-secondary {
+  font-size: 0.6em;
+  padding-bottom: 20px;
+  background: none!important;
+  border: none;
+  border-radius: 0;
+  border-bottom: 10px solid var(--btn-border);
+  color: var(--btn-border);
+  text-transform: uppercase;
+
+  &:hover, &:active {
+    color: var(--base);
+    border-bottom-color:  var(--base);
   }
 }
 

@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="base-container">
   <app-loader *ngIf="isLoading"></app-loader>
   <div *ngIf="!hasTopPanel">
     <h1 class="main-header block-header">
@@ -9,20 +9,35 @@
   </div>
   <div *ngIf="hasTopPanel" class="top-panel">
     <div class="challenge-background"></div>
-    <h1 class="main-header block-header">JS Coding Challenge</h1>
+    <div class="challenge-logo"></div>
+
+    <div class="logo">
+      <div class="logo-js">JS</div>
+      <div class="logo-ch">
+        <div class="logo-coding">Coding</div>
+        <div class="logo-challenge">Challenge</div>
+        <div class="logo-under">Team Event</div>
+      </div>
+    </div>
+
     <div class="info-panel">
-      <div>
-        Improve your development skills by passing coding challenge with your colleagues on
+      <div class="info-header">Improve your development skills by passing coding challenge</div>
+
+      <div class="info-sub-header">
+        on
         <a class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
            target="_blank"
            href="https://www.codewars.com">Codewars</a>
         platform that
-        continuously push your coding practice!
-        <br/><br/>
-        6 weeks duration of challenge
-        <br/>
-        5 tasks in different levels/points each week
+        continuously push your coding practice
       </div>
+
+      <div class="info-dates"><span>12-29 November 2024</span></div>
+
+      <div class="info-block"><span class="info-block-number">3</span> weeks duration of challenge</div>
+      <div class="info-block"><span class="info-block-number">10</span> tasks in different levels / points each week</div>
+
+      <div class="info-panel-btns">
       <button type="button" class="btn btn-secondary" (click)="scroll('tasks-panel')">
         Tasks
       </button>
@@ -30,6 +45,7 @@
         Leaderboard
       </button>
       <button type="button" class="btn btn-primary" (click)="goToRegister()">Join the challenge!</button>
+      </div>
     </div>
   </div>
 
@@ -97,10 +113,10 @@
     <div>
       <p class="remaining-time-title">Our challenge will start very soon!</p>
       <p class="remaining-time" *ngIf="(remainingTime | async) as t">
-        <span *ngIf="t.daysToDday > 0">{{ t.daysToDday }} days,</span>
-        {{ t.hoursToDday }} hours,
-        {{ t.minutesToDday }} minutes,
-        {{ t.secondsToDday }} seconds
+        <span *ngIf="t.daysToDday > 0">{{ t.daysToDday }} days, </span>
+        <span *ngIf="t.hoursToDday > 0">{{ t.hoursToDday }} hours, </span>
+        <span *ngIf="t.minutesToDday > 0">{{ t.minutesToDday }} minutes, </span>
+        <span *ngIf="t.secondsToDday > 0">{{ t.secondsToDday }} seconds</span>
       </p>
     </div>
   </div>

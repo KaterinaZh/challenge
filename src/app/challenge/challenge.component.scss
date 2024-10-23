@@ -1,5 +1,9 @@
 @import '../../assets/styles/theme';
 
+.base-container {
+  font-family: $font-family;
+}
+
 .tasks-panel {
   padding: 15px 45px 20px;
   border-radius: .25rem;
@@ -100,40 +104,154 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  background: url(../../assets/images/challenge_page.svg) 30vw/auto 100% no-repeat;
+  background-image: url(../../assets/images/background.png);
+  background-size: auto 100%;
+  background-repeat: repeat-x;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.challenge-logo {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  background: url(../../assets/images/robot.svg) 50% 60% no-repeat;
+  background-size: 70vh;
   animation-name: challenge-image;
-  animation-duration: 4s;
+  animation-duration: 3s;
 }
 
 @keyframes challenge-image {
   from {
-    background-position-x: center;
+    background-position-x: left;
     opacity: 0
   }
   to {
-    background-position-x: 30vw;
+    background-position-x: 50%;
     opacity: 100%;
   }
 }
 
+.logo {
+  position: absolute;
+  top: 15vh;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+
+  .logo-js {
+    padding-right: 3px;
+    font-size: 4.5em;
+    font-weight: 800;
+    line-height: 100%;
+    color: var(--base);
+  }
+
+  .logo-ch {
+    padding-top: 8px;
+    line-height: 1.6em;
+    font-weight: 800;
+  }
+
+  .logo-coding {
+    font-size: 1.5em;
+    color: var(--base);
+  }
+
+  .logo-challenge {
+    font-size: 2em;
+  }
+
+  .logo-under {
+    font-weight: 250;
+    font-size: 1em;
+    text-align: right;
+  }
+}
+
 .info-panel {
-  min-width: 300px;
-  width: 30%;
-  margin: 15vh 0 0 60px;
-  padding: 20px;
-  background-color: var(--info);
+  position: absolute;
+  top: 18vh;
+  height: 65vh;
+  width: 50%;
+  margin-left: 50%;
+  padding-right: 5vw;
   border-radius: 5px;
   white-space: pre-line;
   font-size: 1.1em;
+  text-align: center;
 
-  .btn {
-    margin-top: 20px;
-    margin-right: 20px;
+  .info-header {
+    margin-bottom: 12px;
+    font-size: 1.4em;
+    line-height: 1em;
+    font-weight: 800;
+    text-transform: uppercase;
   }
 
-  .btn, .link-secondary {
-    position: relative;
-    z-index: 10;
+  .info-sub-header {
+    font-size: 0.8em;
+    font-weight: 250;
+  }
+
+  .info-dates {
+    margin: 5vh 0 10vh;
+    font-size: 0.9em;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--bg);
+
+    span {
+      border-radius: 15px;
+      background-color: var(--text-color);
+      padding: 5px 15px;
+    }
+  }
+
+  .info-block {
+    display: flex;
+    margin-bottom: 20px;
+    height: 60px;
+    font-size: 0.8em;
+    font-weight: 800;
+    text-transform: uppercase;
+    background-color: var(--base);
+    text-align: left;
+    align-items: center;
+
+    .info-block-number {
+      display: inline-flex;
+      width: 40px;
+      height: 40px;
+      margin: 5px 10px 5px 20px;
+      border-radius: 50%;
+      background-color: var(--text-color);
+      color: var(--base);
+      font-size: 1.5em;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .info-panel-btns {
+    position: absolute;
+    width: calc(100% - 5vw);
+    bottom: 0;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 10vh;
+  }
+
+  .btn {
+    width: calc(33% - 3px);
+    margin-top: 20px;
+    margin-right: 3px;
+  }
+
+  .link-secondary {
+    color: var(--text-color) !important;
+    font-weight: normal;
   }
 }
 
@@ -167,14 +285,14 @@
     width: 80%;
   }
 
-  .challenge-background {
+  .challenge-logo {
     background-position-x: -5%;
     animation-name: challenge-image-small;
   }
 
   @keyframes challenge-image-small {
     from {
-      background-position-x: center;
+      background-position-x: left;
       opacity: 0
     }
     to {

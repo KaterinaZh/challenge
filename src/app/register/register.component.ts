@@ -35,6 +35,7 @@ export class RegisterComponent {
     this.error = '';
 
     if (this.form.invalid) {
+      this.form.markAllAsTouched();
       return;
     }
 

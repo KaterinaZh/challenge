@@ -1,11 +1,14 @@
-<div class="base-container">
+<div class="base-container" id="top-panel">
   <app-loader *ngIf="isLoading"></app-loader>
-  <div *ngIf="!hasTopPanel">
-    <h1 class="main-header block-header">
-      JS Coding Challenge
-      <br />
-      <p class="main-subheader">Solve the puzzles & win</p>
-    </h1>
+  <div class="top-panel-reg" *ngIf="!hasTopPanel">
+    <div class="logo">
+      <div class="logo-js">JS</div>
+      <div class="logo-ch">
+        <div class="logo-coding">Coding</div>
+        <div class="logo-challenge">Challenge</div>
+        <div class="logo-under">Team Event</div>
+      </div>
+    </div>
   </div>
   <div *ngIf="hasTopPanel" class="top-panel">
     <div class="challenge-background"></div>
@@ -109,15 +112,18 @@
                    [isWeekBoard]="false"
   ></app-leaderboard>
 
-  <div id="tasks-panel" *ngIf="!!futureRunStart" class="future-run-promo">
+  <div id="timer-panel" *ngIf="!!futureRunStart" class="future-run-promo">
     <div>
       <p class="remaining-time-title">Our challenge will start very soon!</p>
       <p class="remaining-time" *ngIf="(remainingTime | async) as t">
         <span *ngIf="t.daysToDday > 0">{{ t.daysToDday }} days, </span>
         <span *ngIf="t.hoursToDday > 0">{{ t.hoursToDday }} hours, </span>
         <span *ngIf="t.minutesToDday > 0">{{ t.minutesToDday }} minutes, </span>
-        <span *ngIf="t.secondsToDday > 0">{{ t.secondsToDday }} seconds</span>
+        <span *ngIf="t.secondsToDday > 0 || t.secondsToDday === 0">{{ t.secondsToDday }} seconds</span>
       </p>
     </div>
+    <button *ngIf="!isTopOfPage()" type="button" class="btn btn-up" (click)="scroll('top-panel')">
+      <i class="bi bi-arrow-up-circle"></i>
+    </button>
   </div>
 </div>

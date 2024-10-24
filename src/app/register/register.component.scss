@@ -1,6 +1,43 @@
+.d-flex {
+  font-size: .9em;
+}
+
+.background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: var(--bg-image-url);
+  background-size: auto 100%;
+  background-repeat: repeat-x;
+  opacity: var(--bg-image-opacity);
+  z-index: -1;
+}
+
+.robot {
+  width: 50%;
+  height: 100vh;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  opacity: 0.7;
+}
+
+.robot-left {
+  left: 0;
+  background-image: url(../../assets/images/robot-left.svg);
+  background-position-y: 40%;
+  background-position-x: left;
+}
+
+.robot-right {
+  right: 0;
+  background-image: url(../../assets/images/robot-right.svg);
+  background-position-x: 100%;
+  background-position-y: 60%;
+}
+
 .welcome-image {
   width: 50%;
-  border-radius: 0.375rem;
   margin-bottom: 20px;
 }
 
@@ -10,4 +47,24 @@
   align-items: center;
   justify-content: center;
   margin: 0 10px 10px;
+
+  .btn {
+    margin-top: 20px;
+  }
+}
+
+.panel-btns {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 20px;
+
+  .btn {
+    width: calc(50% - 0.25rem);
+  }
+}
+
+.card-header {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 24px;
 }

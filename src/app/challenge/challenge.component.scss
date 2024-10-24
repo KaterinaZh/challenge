@@ -1,9 +1,5 @@
 @import '../../assets/styles/theme';
 
-.base-container {
-  font-family: $font-family;
-}
-
 .tasks-panel {
   padding: 15px 45px 20px;
   border-radius: .25rem;
@@ -100,14 +96,24 @@
   position: relative;
 }
 
+.top-panel-reg {
+  height: 144px;
+  position: relative;
+
+  .logo {
+    top: 30px;
+    width: 100%;
+  }
+}
+
 .challenge-background {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-image: url(../../assets/images/background.png);
+  background-image: var(--bg-image-url);
   background-size: auto 100%;
   background-repeat: repeat-x;
-  opacity: 0.5;
+  opacity: var(--bg-image-opacity);
   z-index: -1;
 }
 
@@ -115,8 +121,8 @@
   position: absolute;
   height: 100%;
   width: 50%;
-  background: url(../../assets/images/robot.svg) 50% 60% no-repeat;
-  background-size: 70vh;
+  background: var(--robot-url) 50% 60% no-repeat;
+  background-size: 70vh 35vw;
   animation-name: challenge-image;
   animation-duration: 3s;
 }
@@ -223,6 +229,7 @@
     .info-block-number {
       display: inline-flex;
       width: 40px;
+      min-width: 40px;
       height: 40px;
       margin: 5px 10px 5px 20px;
       border-radius: 50%;
@@ -240,7 +247,6 @@
     bottom: 0;
     display: flex;
     align-items: flex-end;
-    margin-top: 10vh;
   }
 
   .btn {
@@ -265,40 +271,61 @@
   }
 }
 
+.btn.btn-up {
+  font-size: 2.8em;
+  padding: 0 5px;
+  vertical-align: top;
+  position: fixed;
+  right: 25px;
+  bottom: 20px;
+  opacity: 0.4;
+  border: 0;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
 @media (max-height: 600px) {
   .info-panel {
-    margin-top: 0;
+    height: 75vh;
     font-size: 1em;
+
+    .info-dates {
+      margin-bottom: 5vh;
+    }
+  }
+}
+
+@media (max-height: 450px) {
+  .info-panel {
+    top: 5vh;
+
+    .info-block {
+      height: 40px;
+    }
+
+    .info-panel-btns {
+      background-color: rgba(255, 255, 255, 0.9);
+    }
   }
 }
 
 @media (max-width: 1000px) {
-  .info-panel {
-    width: 60%;
-  }
-}
-
-@media (max-width: 600px) {
-  .info-panel {
-    margin-top: 0;
-    font-size: 1em;
-    width: 80%;
-  }
-
   .challenge-logo {
-    background-position-x: -5%;
-    animation-name: challenge-image-small;
+    display: none;
   }
 
-  @keyframes challenge-image-small {
-    from {
-      background-position-x: left;
-      opacity: 0
-    }
-    to {
-      background-position-x: -5%;
-      opacity: 100%;
-    }
+  .logo {
+    top: 1vh;
+    width: 100%;
+    font-size: 0.7em;
+  }
+
+  .info-panel {
+    height: 75vh;
+    width: calc(100% - 5vw);
+    margin-left: 5vw;
   }
 }
 

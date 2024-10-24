@@ -1,7 +1,7 @@
 [data-theme="light"] {
-  --bg: #fff;
+  --bg: #efedf6;
   --base: #EE56A3;
-  --info: #1cade41c;
+  --active: #e51a81;
   --panel-border: #ccc;
   --disabled: #999;
   --board-bg: #F2F2F2;
@@ -13,17 +13,23 @@
   --brd-place-2: #27CED7;
   --brd-place-3: #41BBA7;
   --brd-other: #1D9BA1;
+  --text-color: #36246B;
   --btn-border: #616A80;
+  --bg-image-url: url(../../assets/images/background-light.png);
+  --bg-image-opacity: 0.5;
+  --robot-url: url(../../assets/images/robot-light.svg);
+  --bs-border-radius: 0;
+  --bs-form-invalid-border-color: #EE56A3;
+  --bs-form-invalid-color: #EE56A3;
 
-  .container-fluid {
-    padding: 0;
-  }
+  background-color: var(--bg);
+  color: var(--text-color);
 }
 
 [data-theme="dark"] {
   --bg: #1C0D35;
   --base: #EE56A3;
-  --info: #1cade41c;
+  --active: #e51a81;
   --panel-border: #1CADE4;
   --disabled: #999;
   --board-bg: var(--bg);
@@ -38,6 +44,12 @@
   --bs-table-bg: var(--bg);
   --text-color: rgb(239, 239, 239);
   --btn-border: #616A80;
+  --bg-image-url: url(../../assets/images/background.png);
+  --bg-image-opacity: 0.5;
+  --robot-url: url(../../assets/images/robot.svg);
+  --bs-border-radius: 0;
+  --bs-form-invalid-border-color: #EE56A3;
+  --bs-form-invalid-color: #EE56A3;
 
   background-color: var(--bg);
   color: var(--text-color);
@@ -57,16 +69,6 @@
 
     .btn-close {
       background-color: var(--text-color);
-    }
-  }
-
-  .card {
-    border-color: var(--text-color);
-    background-color: var(--bg);
-    color: var(--text-color);
-
-    .card-header {
-      border-color: var(--text-color);
     }
   }
 

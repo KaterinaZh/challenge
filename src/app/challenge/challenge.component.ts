@@ -3,7 +3,7 @@ import {LeaderboardService} from "../services/leaderboard.service";
 import {Task} from "../models/task.model";
 import {Router} from "@angular/router";
 import {Run} from "../models/run.model";
-import {Observable, interval, map, noop, shareReplay, timer} from "rxjs";
+import {Observable, interval, map, noop, shareReplay} from "rxjs";
 import {UserService} from '../services/user.service';
 import {Leaderboard} from "../models/leaderboard.model";
 
@@ -83,13 +83,20 @@ export class ChallengeComponent implements OnInit {
   }
 
   public scroll(id: string) {
-    const el = document.getElementById(id);
+    let el = document.getElementById(id);
+    if (!el) {
+      el = document.getElementById('timer-panel');
+    }
     el ? el.scrollIntoView({behavior: 'smooth'}) : noop();
   }
 
   public chooseRun(run: Run) {
     this.currentRun = run;
     this.loadLeaderboard(run.id, run.tasks || []);
+  }
+
+  public isTopOfPage() {
+    return window.scrollY == 0;
   }
 
   private loadLeaderboard(runId: number, tasks: Task[]) {

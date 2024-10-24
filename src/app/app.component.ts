@@ -16,7 +16,7 @@ export class AppComponent {
   }
 
   ngOnInit() {
-    this.isLightTheme = this.userService.getTheme() !== 'dark';
+    this.isLightTheme = this.userService.getTheme() == 'light';
     this.updateThemeBody();
   }
 

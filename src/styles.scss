@@ -5,6 +5,10 @@
 @import 'bootstrap-icons/font/bootstrap-icons';
 @import 'assets/styles/theme';
 
+body {
+  font-family: $font-family;
+}
+
 @font-face {
   font-family: 'Archivo Expanded';
   src: url('/assets/fonts/Archivo Expanded.ttf');
@@ -22,19 +26,29 @@
   font-weight: 250;
 }
 
-.btn-primary, .btn-primary:hover {
-  font-size: 0.6em;
+.btn-primary, .btn-primary:hover, .btn-primary:active {
+  font-size: 11px;
   padding-bottom: 20px;
   background: none!important;
   border: none;
   border-radius: 0;
+  color: var(--base);
   border-bottom: 10px solid var(--base);
   text-transform: uppercase;
-  color: var(--base);
+
+  &:hover, &:active {
+    color: var(--active);
+    border-bottom-color: var(--active);
+  }
+
+  &:disabled {
+    color: var(--disabled);
+    border-bottom-color: var(--disabled);
+  }
 }
 
 .btn-secondary {
-  font-size: 0.6em;
+  font-size: 11px;
   padding-bottom: 20px;
   background: none!important;
   border: none;
@@ -44,8 +58,8 @@
   text-transform: uppercase;
 
   &:hover, &:active {
-    color: var(--base);
-    border-bottom-color:  var(--base);
+    color: var(--active);
+    border-bottom-color:  var(--active);
   }
 }
 
@@ -58,5 +72,17 @@
 
   &:active {
     background-color: var(--base);
+  }
+}
+
+.card {
+  border-color: var(--text-color);
+  background-color: var(--bg);
+  color: var(--text-color);
+  border-width: 3px;
+
+  .card-header {
+    border-color: var(--text-color);
+    border-width: 3px;
   }
 }

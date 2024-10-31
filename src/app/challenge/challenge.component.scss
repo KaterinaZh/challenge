@@ -323,9 +323,15 @@
   }
 
   .info-panel {
-    height: 75vh;
+    height: 70vh;
     width: calc(100% - 5vw);
     margin-left: 5vw;
+  }
+}
+
+@media (max-height: 450px) and  (max-width: 1000px) {
+  .top-panel .logo {
+    display: none;
   }
 }
 

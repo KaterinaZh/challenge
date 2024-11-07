@@ -53,8 +53,8 @@
   </div>
 
   <div id="tasks-panel" *ngIf="currentRun" class="tasks-panel">
-    <div class="row">
-      <div class="col-9">
+    <div class="row tasks-header">
+      <div class="col-md-9 col-sm-12">
         <h4 class="block-header">Current week
           <button type="button" class="btn btn-mortarboard" (click)="toInfo(currentRun.id)"
                   ngbTooltip="Read additional info">
@@ -65,9 +65,9 @@
           {{currentRun.endDate|date:'medium'}}</span>
         </h4>
       </div>
-      <div class="col-3">
+      <div class="col-md-3 col-sm-12">
         <div ngbDropdown class="d-inline-block float-end run-selector" placement="bottom-end">
-          <button type="button" class="btn btn-secondary" id="dropdownRun" ngbDropdownToggle>
+          <button type="button" class="btn" id="dropdownRun" ngbDropdownToggle>
             {{currentRun.description}}
           </button>
           <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdownRun">
@@ -78,10 +78,9 @@
         </div>
       </div>
     </div>
-    <div class="row">
+    <div class="row row-cols-md-5 task-cards-panel">
       <div
-        *ngFor="let task of currentRun.tasks; let i = index"
-        class="col-12 col-sm-12 col-md"
+        *ngFor="let task of currentRun.tasks; let i = index" class="task-card"
       >
         <a
           target="_blank"
@@ -122,8 +121,9 @@
         <span *ngIf="t.secondsToDday > 0 || t.secondsToDday === 0">{{ t.secondsToDday }} seconds</span>
       </p>
     </div>
-    <button *ngIf="!isTopOfPage()" type="button" class="btn btn-up" (click)="scroll('top-panel')">
-      <i class="bi bi-arrow-up-circle"></i>
-    </button>
   </div>
+
+  <button *ngIf="!isTopOfPage" type="button" class="btn btn-up" (click)="scroll('top-panel')">
+    <i class="bi bi-arrow-up-circle"></i>
+  </button>
 </div>

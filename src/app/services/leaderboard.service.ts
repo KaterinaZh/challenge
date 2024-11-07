@@ -9,7 +9,10 @@ import {Leaderboard, LeaderboardBE, User} from "../models/leaderboard.model";
   providedIn: 'root'
 })
 export class LeaderboardService {
-
+  // For test data:
+  // private dataURL = '../../assets/data';
+  // private readonly RUNS = `${this.dataURL}/runs.json`;
+  // private readonly LEADERBOARD = `${this.dataURL}/leaderboard.json`;
   private readonly RUNS = '/api/runs';
   private readonly LEADERBOARD = '/leaderboard';
   private readonly weekNames: { name: string, links: string[] }[] =
@@ -24,15 +27,15 @@ export class LeaderboardService {
         ]
       },
       {
-        name: 'OOP', links: [
-          'https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_programming',
-          'https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Classes_in_JavaScript',
-          'https://www.freecodecamp.org/news/object-oriented-programming-javascript/',
-          'https://javascript.info/classes',
-          'https://www.geeksforgeeks.org/introduction-object-oriented-programming-javascript/'
+        name: 'Algorithms', links: [
+          'https://www.geeksforgeeks.org/learn-algorithms-with-javascript-tutorial/',
+          'https://www.freecodecamp.org/news/introduction-to-algorithms-with-javascript-examples/',
+          'https://www.toptal.com/developers/sorting-algorithms',
+          'https://www.bigocheatsheet.com/',
+          'https://mrohitsingh.medium.com/top-10-javascript-algorithms-for-coding-challenges-8cbf258841a1'
         ]
       },
-      {name: 'Functional Programming', links: [
+      {name: 'Design patterns & Framework specific', links: [
         'https://dev.to/jamesrweb/principles-of-functional-programming-4b7c',
         'https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function',
         'https://dev.to/biomathcode/composition-of-functions-178g',
@@ -88,6 +91,8 @@ export class LeaderboardService {
   }
 
   getLeaderboard(runId: number): Observable<Leaderboard> {
+    // return this.http.get<LeaderboardBE>(`${this.LEADERBOARD}`).pipe(
+    //   map(res => res.leaderboard));
     return this.http.get<LeaderboardBE>(`${this.RUNS}/${runId}${this.LEADERBOARD}`).pipe(
       map(res => res.leaderboard));
   }

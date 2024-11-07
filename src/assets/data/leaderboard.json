@@ -1,0 +1,2917 @@
+{
+  "leaderboard": {
+    "leaderboardUpdatedDate": "2024-06-10T09:00:07.898Z",
+    "users": [
+      {
+        "firstName": "Shamshod",
+        "lastName": "Isaev",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Shamshod_Isaev",
+        "codewarsUsername": "ShamshodIsayev",
+        "solutions": {
+          "points": 135,
+          "prevPoints": 135,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Egor",
+        "lastName": "Semenov",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Egor_Semenov",
+        "codewarsUsername": "RobinDude",
+        "solutions": {
+          "points": 450,
+          "prevPoints": 375,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": {
+              "id": 1442,
+              "codewarsId": "5c3f31c2460e9b4020780aa2",
+              "fastestSolution": false,
+              "points": 5,
+              "completedAt": "2024-06-03T10:41:48.115Z",
+              "task": {
+                "id": "5c3f31c2460e9b4020780aa2",
+                "name": "Recaman Sequence",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 5,
+                "fastestSolution": null
+              }
+            },
+            "5bc027fccd4ec86c840000b7": {
+              "id": 1456,
+              "codewarsId": "5bc027fccd4ec86c840000b7",
+              "fastestSolution": false,
+              "points": 10,
+              "completedAt": "2024-06-03T16:22:28.734Z",
+              "task": {
+                "id": "5bc027fccd4ec86c840000b7",
+                "name": "Simple sum of pairs",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 10,
+                "fastestSolution": null
+              }
+            },
+            "661c2aacefc32821ecde863c": {
+              "id": 1480,
+              "codewarsId": "661c2aacefc32821ecde863c",
+              "fastestSolution": false,
+              "points": 15,
+              "completedAt": "2024-06-05T17:23:36.925Z",
+              "task": {
+                "id": "661c2aacefc32821ecde863c",
+                "name": "Iterator.tee",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 15,
+                "fastestSolution": null
+              }
+            },
+            "654cdf611d68c91228af27f1": {
+              "id": 1494,
+              "codewarsId": "654cdf611d68c91228af27f1",
+              "fastestSolution": false,
+              "points": 20,
+              "completedAt": "2024-06-08T14:01:09.193Z",
+              "task": {
+                "id": "654cdf611d68c91228af27f1",
+                "name": "Elevator Action!",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 20,
+                "fastestSolution": null
+              }
+            },
+            "63b71bc0834251098ca84b05": {
+              "id": 1496,
+              "codewarsId": "63b71bc0834251098ca84b05",
+              "fastestSolution": false,
+              "points": 25,
+              "completedAt": "2024-06-08T16:00:42.134Z",
+              "task": {
+                "id": "63b71bc0834251098ca84b05",
+                "name": "Flood Room",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 25,
+                "fastestSolution": null
+              }
+            }
+          }
+        }
+      },
+      {
+        "firstName": "Sergey",
+        "lastName": "Nikitsin",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Siarhei_Nikitsin",
+        "codewarsUsername": "Siarhei_N",
+        "solutions": {
+          "points": 90,
+          "prevPoints": 90,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Amina",
+        "lastName": "Senchenko",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Amina_Senchenko",
+        "codewarsUsername": "sch_aa_vk",
+        "solutions": {
+          "points": 325,
+          "prevPoints": 310,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": {
+              "id": 1504,
+              "codewarsId": "5c3f31c2460e9b4020780aa2",
+              "fastestSolution": false,
+              "points": 5,
+              "completedAt": "2024-06-10T04:57:55.005Z",
+              "task": {
+                "id": "5c3f31c2460e9b4020780aa2",
+                "name": "Recaman Sequence",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 5,
+                "fastestSolution": null
+              }
+            },
+            "5bc027fccd4ec86c840000b7": {
+              "id": 1505,
+              "codewarsId": "5bc027fccd4ec86c840000b7",
+              "fastestSolution": false,
+              "points": 10,
+              "completedAt": "2024-06-10T05:27:44.482Z",
+              "task": {
+                "id": "5bc027fccd4ec86c840000b7",
+                "name": "Simple sum of pairs",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 10,
+                "fastestSolution": null
+              }
+            },
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Khrystyna",
+        "lastName": "Kosmanenko",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Khrystyna_Kosmanenko?tab=profile",
+        "codewarsUsername": "khrystyna.kosmanenko",
+        "solutions": {
+          "points": 120,
+          "prevPoints": 120,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Ninoslav",
+        "lastName": "Vitorac",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Ninoslav_Vitorac",
+        "codewarsUsername": "nvitorac",
+        "solutions": {
+          "points": 15,
+          "prevPoints": 15,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Sabyrzhan",
+        "lastName": "Azhigali",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Sabyrzhan_Azhigali",
+        "codewarsUsername": "megasaab",
+        "solutions": {
+          "points": 15,
+          "prevPoints": 15,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Balazs",
+        "lastName": "Horvath",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Balazs_Horvath",
+        "codewarsUsername": "HBazsa",
+        "solutions": {
+          "points": 80,
+          "prevPoints": 80,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Attila",
+        "lastName": "Santa",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/key/upsaId/4060741400008784222?tab=profile",
+        "codewarsUsername": "vailyhu@gmail.com",
+        "solutions": {
+          "points": 450,
+          "prevPoints": 375,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": {
+              "id": 1443,
+              "codewarsId": "5c3f31c2460e9b4020780aa2",
+              "fastestSolution": false,
+              "points": 5,
+              "completedAt": "2024-06-03T10:48:22.499Z",
+              "task": {
+                "id": "5c3f31c2460e9b4020780aa2",
+                "name": "Recaman Sequence",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 5,
+                "fastestSolution": null
+              }
+            },
+            "5bc027fccd4ec86c840000b7": {
+              "id": 1444,
+              "codewarsId": "5bc027fccd4ec86c840000b7",
+              "fastestSolution": false,
+              "points": 10,
+              "completedAt": "2024-06-03T10:40:02.342Z",
+              "task": {
+                "id": "5bc027fccd4ec86c840000b7",
+                "name": "Simple sum of pairs",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 10,
+                "fastestSolution": null
+              }
+            },
+            "661c2aacefc32821ecde863c": {
+              "id": 1457,
+              "codewarsId": "661c2aacefc32821ecde863c",
+              "fastestSolution": false,
+              "points": 15,
+              "completedAt": "2024-06-03T16:33:46.366Z",
+              "task": {
+                "id": "661c2aacefc32821ecde863c",
+                "name": "Iterator.tee",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 15,
+                "fastestSolution": null
+              }
+            },
+            "654cdf611d68c91228af27f1": {
+              "id": 1462,
+              "codewarsId": "654cdf611d68c91228af27f1",
+              "fastestSolution": false,
+              "points": 20,
+              "completedAt": "2024-06-04T07:12:45.443Z",
+              "task": {
+                "id": "654cdf611d68c91228af27f1",
+                "name": "Elevator Action!",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 20,
+                "fastestSolution": null
+              }
+            },
+            "63b71bc0834251098ca84b05": {
+              "id": 1477,
+              "codewarsId": "63b71bc0834251098ca84b05",
+              "fastestSolution": false,
+              "points": 25,
+              "completedAt": "2024-06-05T10:26:10.053Z",
+              "task": {
+                "id": "63b71bc0834251098ca84b05",
+                "name": "Flood Room",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 25,
+                "fastestSolution": null
+              }
+            }
+          }
+        }
+      },
+      {
+        "firstName": "Alikasandr",
+        "lastName": "Marynovich",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Aliaksandr_Marynovich",
+        "codewarsUsername": "marinovich",
+        "solutions": {
+          "points": 185,
+          "prevPoints": 180,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": {
+              "id": 1459,
+              "codewarsId": "5c3f31c2460e9b4020780aa2",
+              "fastestSolution": false,
+              "points": 5,
+              "completedAt": "2024-06-04T00:57:45.324Z",
+              "task": {
+                "id": "5c3f31c2460e9b4020780aa2",
+                "name": "Recaman Sequence",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 5,
+                "fastestSolution": null
+              }
+            },
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Sri",
+        "lastName": "Harsha",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Sri_Harsha",
+        "codewarsUsername": "harsha509",
+        "solutions": {
+          "points": 80,
+          "prevPoints": 80,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Misak",
+        "lastName": "Poghosyan",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Misak_Poghosyan",
+        "codewarsUsername": "Misak-1",
+        "solutions": {
+          "points": 5,
+          "prevPoints": 5,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Vahe",
+        "lastName": "Hayrapetyan",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Vahe_Hayrapetyan",
+        "codewarsUsername": "vahe2424",
+        "solutions": {
+          "points": 450,
+          "prevPoints": 375,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": {
+              "id": 1472,
+              "codewarsId": "5c3f31c2460e9b4020780aa2",
+              "fastestSolution": false,
+              "points": 5,
+              "completedAt": "2024-06-05T08:25:46.094Z",
+              "task": {
+                "id": "5c3f31c2460e9b4020780aa2",
+                "name": "Recaman Sequence",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 5,
+                "fastestSolution": null
+              }
+            },
+            "5bc027fccd4ec86c840000b7": {
+              "id": 1473,
+              "codewarsId": "5bc027fccd4ec86c840000b7",
+              "fastestSolution": false,
+              "points": 10,
+              "completedAt": "2024-06-05T08:56:50.892Z",
+              "task": {
+                "id": "5bc027fccd4ec86c840000b7",
+                "name": "Simple sum of pairs",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 10,
+                "fastestSolution": null
+              }
+            },
+            "661c2aacefc32821ecde863c": {
+              "id": 1476,
+              "codewarsId": "661c2aacefc32821ecde863c",
+              "fastestSolution": false,
+              "points": 15,
+              "completedAt": "2024-06-05T09:39:47.551Z",
+              "task": {
+                "id": "661c2aacefc32821ecde863c",
+                "name": "Iterator.tee",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 15,
+                "fastestSolution": null
+              }
+            },
+            "654cdf611d68c91228af27f1": {
+              "id": 1485,
+              "codewarsId": "654cdf611d68c91228af27f1",
+              "fastestSolution": false,
+              "points": 20,
+              "completedAt": "2024-06-06T10:15:04.732Z",
+              "task": {
+                "id": "654cdf611d68c91228af27f1",
+                "name": "Elevator Action!",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 20,
+                "fastestSolution": null
+              }
+            },
+            "63b71bc0834251098ca84b05": {
+              "id": 1486,
+              "codewarsId": "63b71bc0834251098ca84b05",
+              "fastestSolution": false,
+              "points": 25,
+              "completedAt": "2024-06-06T14:45:22.866Z",
+              "task": {
+                "id": "63b71bc0834251098ca84b05",
+                "name": "Flood Room",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 25,
+                "fastestSolution": null
+              }
+            }
+          }
+        }
+      },
+      {
+        "firstName": "Shuhbam",
+        "lastName": "Tyagi",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/key/upsaId/4060741400455227412",
+        "codewarsUsername": "shubham-tyagi",
+        "solutions": {
+          "points": 50,
+          "prevPoints": 50,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Artyom",
+        "lastName": "Vecherov",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Artyom_Vecherov",
+        "codewarsUsername": "artyom_vecherov",
+        "solutions": {
+          "points": 30,
+          "prevPoints": 30,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Viktoriia",
+        "lastName": "Shcherban",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Viktoriia_Shcherban",
+        "codewarsUsername": "ViktoriiaShcherban",
+        "solutions": {
+          "points": 5,
+          "prevPoints": 5,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Marat",
+        "lastName": "Maksumov",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/key/upsaId/8760000000000367961?tab=profile",
+        "codewarsUsername": "maksumov",
+        "solutions": {
+          "points": 60,
+          "prevPoints": 60,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Sergii",
+        "lastName": "Moisiienko",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Sergii_Moisiienko",
+        "codewarsUsername": "serhey-88",
+        "solutions": {
+          "points": 20,
+          "prevPoints": 20,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Dmitrii",
+        "lastName": "Suroviagin",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Dmitrii_Suroviagin",
+        "codewarsUsername": "Savoury Gin",
+        "solutions": {
+          "points": 450,
+          "prevPoints": 375,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": {
+              "id": 1467,
+              "codewarsId": "5c3f31c2460e9b4020780aa2",
+              "fastestSolution": false,
+              "points": 5,
+              "completedAt": "2024-06-04T13:40:50.249Z",
+              "task": {
+                "id": "5c3f31c2460e9b4020780aa2",
+                "name": "Recaman Sequence",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 5,
+                "fastestSolution": null
+              }
+            },
+            "5bc027fccd4ec86c840000b7": {
+              "id": 1466,
+              "codewarsId": "5bc027fccd4ec86c840000b7",
+              "fastestSolution": false,
+              "points": 10,
+              "completedAt": "2024-06-04T13:52:30.997Z",
+              "task": {
+                "id": "5bc027fccd4ec86c840000b7",
+                "name": "Simple sum of pairs",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 10,
+                "fastestSolution": null
+              }
+            },
+            "661c2aacefc32821ecde863c": {
+              "id": 1487,
+              "codewarsId": "661c2aacefc32821ecde863c",
+              "fastestSolution": false,
+              "points": 15,
+              "completedAt": "2024-06-06T14:41:05.654Z",
+              "task": {
+                "id": "661c2aacefc32821ecde863c",
+                "name": "Iterator.tee",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 15,
+                "fastestSolution": null
+              }
+            },
+            "654cdf611d68c91228af27f1": {
+              "id": 1488,
+              "codewarsId": "654cdf611d68c91228af27f1",
+              "fastestSolution": false,
+              "points": 20,
+              "completedAt": "2024-06-06T15:32:36.741Z",
+              "task": {
+                "id": "654cdf611d68c91228af27f1",
+                "name": "Elevator Action!",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 20,
+                "fastestSolution": null
+              }
+            },
+            "63b71bc0834251098ca84b05": {
+              "id": 1492,
+              "codewarsId": "63b71bc0834251098ca84b05",
+              "fastestSolution": false,
+              "points": 25,
+              "completedAt": "2024-06-07T08:23:14.457Z",
+              "task": {
+                "id": "63b71bc0834251098ca84b05",
+                "name": "Flood Room",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 25,
+                "fastestSolution": null
+              }
+            }
+          }
+        }
+      },
+      {
+        "firstName": "Maksim",
+        "lastName": "Charnou",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Maksim_Charnou",
+        "codewarsUsername": "blackymax",
+        "solutions": {
+          "points": 100,
+          "prevPoints": 100,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Gabor",
+        "lastName": "Godo",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/key/upsaId/8760000000000278764?tab=profile",
+        "codewarsUsername": "ggodga",
+        "solutions": {
+          "points": 300,
+          "prevPoints": 300,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Akshay",
+        "lastName": "Bansal",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Akshay_Bansal",
+        "codewarsUsername": "bansalakshay8",
+        "solutions": {
+          "points": 20,
+          "prevPoints": 20,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Viktoryia",
+        "lastName": "Makaranka",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Viktoryia_Makaranka?tab=profile",
+        "codewarsUsername": "viktoryia-makaranka",
+        "solutions": {
+          "points": 30,
+          "prevPoints": 30,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Max",
+        "lastName": "Nguyen",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Max_Nguyen",
+        "codewarsUsername": "kenfly51",
+        "solutions": {
+          "points": 5,
+          "prevPoints": 5,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Dzmitry",
+        "lastName": "Astraukh",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Dzmitry_Astraukh",
+        "codewarsUsername": "DrDiman",
+        "solutions": {
+          "points": 30,
+          "prevPoints": 30,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Uladzislau",
+        "lastName": "Mamantau",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Uladzislau_Mamantau",
+        "codewarsUsername": "vld-m",
+        "solutions": {
+          "points": 75,
+          "prevPoints": 75,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Aleksandr",
+        "lastName": "Kirilushkin",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Aleksandr_Kirilushkin",
+        "codewarsUsername": "Kirsann",
+        "solutions": {
+          "points": 5,
+          "prevPoints": 5,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Bohdan",
+        "lastName": "Perkhaliuk",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Bohdan_Perkhaliuk",
+        "codewarsUsername": "Badyanchik",
+        "solutions": {
+          "points": 150,
+          "prevPoints": 150,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Yury",
+        "lastName": "Saukou",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/workplace/",
+        "codewarsUsername": "usavkov",
+        "solutions": {
+          "points": 35,
+          "prevPoints": 35,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Aleh",
+        "lastName": "Harnizonau",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Aleh_Harnizonau?tab=profile",
+        "codewarsUsername": "garnio1987",
+        "solutions": {
+          "points": 405,
+          "prevPoints": 355,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": {
+              "id": 1450,
+              "codewarsId": "5c3f31c2460e9b4020780aa2",
+              "fastestSolution": false,
+              "points": 5,
+              "completedAt": "2024-06-03T12:24:22.774Z",
+              "task": {
+                "id": "5c3f31c2460e9b4020780aa2",
+                "name": "Recaman Sequence",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 5,
+                "fastestSolution": null
+              }
+            },
+            "5bc027fccd4ec86c840000b7": {
+              "id": 1451,
+              "codewarsId": "5bc027fccd4ec86c840000b7",
+              "fastestSolution": false,
+              "points": 10,
+              "completedAt": "2024-06-03T13:35:36.570Z",
+              "task": {
+                "id": "5bc027fccd4ec86c840000b7",
+                "name": "Simple sum of pairs",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 10,
+                "fastestSolution": null
+              }
+            },
+            "661c2aacefc32821ecde863c": {
+              "id": 1471,
+              "codewarsId": "661c2aacefc32821ecde863c",
+              "fastestSolution": false,
+              "points": 15,
+              "completedAt": "2024-06-04T17:02:40.639Z",
+              "task": {
+                "id": "661c2aacefc32821ecde863c",
+                "name": "Iterator.tee",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 15,
+                "fastestSolution": null
+              }
+            },
+            "654cdf611d68c91228af27f1": {
+              "id": 1498,
+              "codewarsId": "654cdf611d68c91228af27f1",
+              "fastestSolution": false,
+              "points": 20,
+              "completedAt": "2024-06-09T11:52:59.627Z",
+              "task": {
+                "id": "654cdf611d68c91228af27f1",
+                "name": "Elevator Action!",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 20,
+                "fastestSolution": null
+              }
+            },
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Pavel",
+        "lastName": "Slutski",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Pavel_Slutski",
+        "codewarsUsername": "mrsphinx",
+        "solutions": {
+          "points": 20,
+          "prevPoints": 20,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Raman",
+        "lastName": "Hupalenka",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Raman_Hupalenka",
+        "codewarsUsername": "Raman_Hupalenka",
+        "solutions": {
+          "points": 450,
+          "prevPoints": 375,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": {
+              "id": 1454,
+              "codewarsId": "5c3f31c2460e9b4020780aa2",
+              "fastestSolution": false,
+              "points": 5,
+              "completedAt": "2024-06-03T14:03:08.743Z",
+              "task": {
+                "id": "5c3f31c2460e9b4020780aa2",
+                "name": "Recaman Sequence",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 5,
+                "fastestSolution": null
+              }
+            },
+            "5bc027fccd4ec86c840000b7": {
+              "id": 1455,
+              "codewarsId": "5bc027fccd4ec86c840000b7",
+              "fastestSolution": false,
+              "points": 10,
+              "completedAt": "2024-06-03T15:58:41.724Z",
+              "task": {
+                "id": "5bc027fccd4ec86c840000b7",
+                "name": "Simple sum of pairs",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 10,
+                "fastestSolution": null
+              }
+            },
+            "661c2aacefc32821ecde863c": {
+              "id": 1470,
+              "codewarsId": "661c2aacefc32821ecde863c",
+              "fastestSolution": false,
+              "points": 15,
+              "completedAt": "2024-06-04T16:56:26.388Z",
+              "task": {
+                "id": "661c2aacefc32821ecde863c",
+                "name": "Iterator.tee",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 15,
+                "fastestSolution": null
+              }
+            },
+            "654cdf611d68c91228af27f1": {
+              "id": 1484,
+              "codewarsId": "654cdf611d68c91228af27f1",
+              "fastestSolution": false,
+              "points": 20,
+              "completedAt": "2024-06-06T09:42:09.408Z",
+              "task": {
+                "id": "654cdf611d68c91228af27f1",
+                "name": "Elevator Action!",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 20,
+                "fastestSolution": null
+              }
+            },
+            "63b71bc0834251098ca84b05": {
+              "id": 1499,
+              "codewarsId": "63b71bc0834251098ca84b05",
+              "fastestSolution": false,
+              "points": 25,
+              "completedAt": "2024-06-09T14:29:31.807Z",
+              "task": {
+                "id": "63b71bc0834251098ca84b05",
+                "name": "Flood Room",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 25,
+                "fastestSolution": null
+              }
+            }
+          }
+        }
+      },
+      {
+        "firstName": "sai",
+        "lastName": "midatana",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Saikiran_Midatana",
+        "codewarsUsername": "sai_kiran",
+        "solutions": {
+          "points": 30,
+          "prevPoints": 30,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Yury",
+        "lastName": "Korbut",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Yury_Korbut",
+        "codewarsUsername": "Korbut-Yura",
+        "solutions": {
+          "points": 265,
+          "prevPoints": 235,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": {
+              "id": 1446,
+              "codewarsId": "5c3f31c2460e9b4020780aa2",
+              "fastestSolution": false,
+              "points": 5,
+              "completedAt": "2024-06-03T11:20:33.139Z",
+              "task": {
+                "id": "5c3f31c2460e9b4020780aa2",
+                "name": "Recaman Sequence",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 5,
+                "fastestSolution": null
+              }
+            },
+            "5bc027fccd4ec86c840000b7": {
+              "id": 1474,
+              "codewarsId": "5bc027fccd4ec86c840000b7",
+              "fastestSolution": false,
+              "points": 10,
+              "completedAt": "2024-06-05T08:58:43.559Z",
+              "task": {
+                "id": "5bc027fccd4ec86c840000b7",
+                "name": "Simple sum of pairs",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 10,
+                "fastestSolution": null
+              }
+            },
+            "661c2aacefc32821ecde863c": {
+              "id": 1481,
+              "codewarsId": "661c2aacefc32821ecde863c",
+              "fastestSolution": false,
+              "points": 15,
+              "completedAt": "2024-06-06T07:07:30.635Z",
+              "task": {
+                "id": "661c2aacefc32821ecde863c",
+                "name": "Iterator.tee",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 15,
+                "fastestSolution": null
+              }
+            },
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Ilias",
+        "lastName": "Musin",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Ilias_Musin",
+        "codewarsUsername": "westfort29",
+        "solutions": {
+          "points": 15,
+          "prevPoints": 15,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Mukhammadamin",
+        "lastName": "Sultonov",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Mukhammadamin_Sultonov",
+        "codewarsUsername": "msbenedict",
+        "solutions": {
+          "points": 60,
+          "prevPoints": 60,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Yuliya",
+        "lastName": "Miatlionak",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Yuliya_Miatlionak?tab=profile",
+        "codewarsUsername": "JuliaMV",
+        "solutions": {
+          "points": 120,
+          "prevPoints": 120,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Taras",
+        "lastName": "Tereschenko",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Taras_Tereschenko",
+        "codewarsUsername": "programister42",
+        "solutions": {
+          "points": 65,
+          "prevPoints": 65,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Ruslan",
+        "lastName": "Galiev",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Ruslan_Galiev",
+        "codewarsUsername": "Bryant---24",
+        "solutions": {
+          "points": 5,
+          "prevPoints": 5,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Mykola",
+        "lastName": "Makhonin",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Mykola_Makhonin",
+        "codewarsUsername": "Nikalas90",
+        "solutions": {
+          "points": 10,
+          "prevPoints": 10,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Tamer",
+        "lastName": "Ibrahim",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Tamer_Ibrahim",
+        "codewarsUsername": "tameribrahim",
+        "solutions": {
+          "points": 5,
+          "prevPoints": 5,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Aliaksandr",
+        "lastName": "Pyrkh",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Aliaksandr_Pyrkh",
+        "codewarsUsername": "apyrkh",
+        "solutions": {
+          "points": 315,
+          "prevPoints": 315,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Juan",
+        "lastName": "Vallejo",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/key/upsaId/8760000000000366850?tab=profile",
+        "codewarsUsername": "jdvallejor",
+        "solutions": {
+          "points": 30,
+          "prevPoints": 30,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Yerassyl",
+        "lastName": "Bekberov",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Yerassyl_Bekberov",
+        "codewarsUsername": "ye-russell",
+        "solutions": {
+          "points": 80,
+          "prevPoints": 80,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Mikhail",
+        "lastName": "Hatsilau",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Mikhail_Hatsilau",
+        "codewarsUsername": "mikhail-hatsilau",
+        "solutions": {
+          "points": 60,
+          "prevPoints": 60,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Alinur",
+        "lastName": "Zhengis",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Alinur_Zhengis",
+        "codewarsUsername": "23082000Ali",
+        "solutions": {
+          "points": 5,
+          "prevPoints": 5,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Janos",
+        "lastName": "Fekete",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Janos_Fekete1",
+        "codewarsUsername": "FJancsi",
+        "solutions": {
+          "points": 90,
+          "prevPoints": 85,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": {
+              "id": 1465,
+              "codewarsId": "5c3f31c2460e9b4020780aa2",
+              "fastestSolution": false,
+              "points": 5,
+              "completedAt": "2024-06-04T13:27:31.031Z",
+              "task": {
+                "id": "5c3f31c2460e9b4020780aa2",
+                "name": "Recaman Sequence",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 5,
+                "fastestSolution": null
+              }
+            },
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Olya",
+        "lastName": "Shyshova",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Olha_Shyshova",
+        "codewarsUsername": "Olya-web7",
+        "solutions": {
+          "points": 70,
+          "prevPoints": 70,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Stepan",
+        "lastName": "Sendun",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/key/upsaId/4060741400312272435?tab=profile",
+        "codewarsUsername": "Steve21",
+        "solutions": {
+          "points": 450,
+          "prevPoints": 375,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": {
+              "id": 1447,
+              "codewarsId": "5c3f31c2460e9b4020780aa2",
+              "fastestSolution": false,
+              "points": 5,
+              "completedAt": "2024-06-03T12:00:32.854Z",
+              "task": {
+                "id": "5c3f31c2460e9b4020780aa2",
+                "name": "Recaman Sequence",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 5,
+                "fastestSolution": null
+              }
+            },
+            "5bc027fccd4ec86c840000b7": {
+              "id": 1449,
+              "codewarsId": "5bc027fccd4ec86c840000b7",
+              "fastestSolution": false,
+              "points": 10,
+              "completedAt": "2024-06-03T12:26:14.744Z",
+              "task": {
+                "id": "5bc027fccd4ec86c840000b7",
+                "name": "Simple sum of pairs",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 10,
+                "fastestSolution": null
+              }
+            },
+            "661c2aacefc32821ecde863c": {
+              "id": 1448,
+              "codewarsId": "661c2aacefc32821ecde863c",
+              "fastestSolution": false,
+              "points": 15,
+              "completedAt": "2024-06-03T12:35:56.865Z",
+              "task": {
+                "id": "661c2aacefc32821ecde863c",
+                "name": "Iterator.tee",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 15,
+                "fastestSolution": null
+              }
+            },
+            "654cdf611d68c91228af27f1": {
+              "id": 1460,
+              "codewarsId": "654cdf611d68c91228af27f1",
+              "fastestSolution": false,
+              "points": 20,
+              "completedAt": "2024-06-04T05:56:29.980Z",
+              "task": {
+                "id": "654cdf611d68c91228af27f1",
+                "name": "Elevator Action!",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 20,
+                "fastestSolution": null
+              }
+            },
+            "63b71bc0834251098ca84b05": {
+              "id": 1461,
+              "codewarsId": "63b71bc0834251098ca84b05",
+              "fastestSolution": false,
+              "points": 25,
+              "completedAt": "2024-06-04T06:12:24.309Z",
+              "task": {
+                "id": "63b71bc0834251098ca84b05",
+                "name": "Flood Room",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 25,
+                "fastestSolution": null
+              }
+            }
+          }
+        }
+      },
+      {
+        "firstName": "Vamsi Krishna",
+        "lastName": "Bakkamunthala",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/VamsiKrishna_Bakkamunthala",
+        "codewarsUsername": "vamsikrishna1508",
+        "solutions": {
+          "points": 75,
+          "prevPoints": 75,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Janos",
+        "lastName": "Stefan",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Janos_Stefan",
+        "codewarsUsername": "djohni",
+        "solutions": {
+          "points": 25,
+          "prevPoints": 25,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Yogesh",
+        "lastName": "Dollin",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Yogesh_Dollin",
+        "codewarsUsername": "YogeshDollin",
+        "solutions": {
+          "points": 250,
+          "prevPoints": 245,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": {
+              "id": 1464,
+              "codewarsId": "5c3f31c2460e9b4020780aa2",
+              "fastestSolution": false,
+              "points": 5,
+              "completedAt": "2024-06-04T10:10:29.157Z",
+              "task": {
+                "id": "5c3f31c2460e9b4020780aa2",
+                "name": "Recaman Sequence",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 5,
+                "fastestSolution": null
+              }
+            },
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Elena",
+        "lastName": "Kogodeeva",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Elena_Kogodeeva",
+        "codewarsUsername": "Neverbalnost",
+        "solutions": {
+          "points": 60,
+          "prevPoints": 60,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Phu",
+        "lastName": "Le",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Phu_Le",
+        "codewarsUsername": "xFood1628",
+        "solutions": {
+          "points": 15,
+          "prevPoints": 15,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Genandi",
+        "lastName": "Egorov",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Gennadi_Egorov",
+        "codewarsUsername": "gegorov",
+        "solutions": {
+          "points": 40,
+          "prevPoints": 40,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Svitlana",
+        "lastName": "Dasgupta",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Svitlana_Dasgupta",
+        "codewarsUsername": "deva84",
+        "solutions": {
+          "points": 30,
+          "prevPoints": 30,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Brigitte",
+        "lastName": "Guerrero",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Brigitte_Guerrero",
+        "codewarsUsername": "caroguerrerosilvera",
+        "solutions": {
+          "points": 15,
+          "prevPoints": 15,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Yury",
+        "lastName": "Barysevich",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Yury_Barysevich1",
+        "codewarsUsername": "fizik",
+        "solutions": {
+          "points": 75,
+          "prevPoints": 75,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Kamran",
+        "lastName": "Zeynalov",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/key/upsaId/8760000000005000126",
+        "codewarsUsername": "neo-the-coder",
+        "solutions": {
+          "points": 380,
+          "prevPoints": 305,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": {
+              "id": 1482,
+              "codewarsId": "5c3f31c2460e9b4020780aa2",
+              "fastestSolution": false,
+              "points": 5,
+              "completedAt": "2024-06-06T07:26:40.521Z",
+              "task": {
+                "id": "5c3f31c2460e9b4020780aa2",
+                "name": "Recaman Sequence",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 5,
+                "fastestSolution": null
+              }
+            },
+            "5bc027fccd4ec86c840000b7": {
+              "id": 1483,
+              "codewarsId": "5bc027fccd4ec86c840000b7",
+              "fastestSolution": false,
+              "points": 10,
+              "completedAt": "2024-06-06T08:19:15.861Z",
+              "task": {
+                "id": "5bc027fccd4ec86c840000b7",
+                "name": "Simple sum of pairs",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 10,
+                "fastestSolution": null
+              }
+            },
+            "661c2aacefc32821ecde863c": {
+              "id": 1501,
+              "codewarsId": "661c2aacefc32821ecde863c",
+              "fastestSolution": false,
+              "points": 15,
+              "completedAt": "2024-06-09T17:35:14.553Z",
+              "task": {
+                "id": "661c2aacefc32821ecde863c",
+                "name": "Iterator.tee",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 15,
+                "fastestSolution": null
+              }
+            },
+            "654cdf611d68c91228af27f1": {
+              "id": 1502,
+              "codewarsId": "654cdf611d68c91228af27f1",
+              "fastestSolution": false,
+              "points": 20,
+              "completedAt": "2024-06-09T17:23:44.680Z",
+              "task": {
+                "id": "654cdf611d68c91228af27f1",
+                "name": "Elevator Action!",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 20,
+                "fastestSolution": null
+              }
+            },
+            "63b71bc0834251098ca84b05": {
+              "id": 1500,
+              "codewarsId": "63b71bc0834251098ca84b05",
+              "fastestSolution": false,
+              "points": 25,
+              "completedAt": "2024-06-09T15:50:26.555Z",
+              "task": {
+                "id": "63b71bc0834251098ca84b05",
+                "name": "Flood Room",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 25,
+                "fastestSolution": null
+              }
+            }
+          }
+        }
+      },
+      {
+        "firstName": "Parassat",
+        "lastName": "Talap",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Parassat_Talap",
+        "codewarsUsername": "parasat",
+        "solutions": {
+          "points": 5,
+          "prevPoints": 5,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Haluk Furkan",
+        "lastName": "KICIK",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Haluk_Furkan_Kicik",
+        "codewarsUsername": "kicikhaluk",
+        "solutions": {
+          "points": 15,
+          "prevPoints": 15,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Ádám Richárd",
+        "lastName": "Nagy",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Adam_Nagy3",
+        "codewarsUsername": "xizi0n",
+        "solutions": {
+          "points": 5,
+          "prevPoints": 5,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Viktor",
+        "lastName": "Kazak",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Viktar_Kazak1",
+        "codewarsUsername": "vkazak",
+        "solutions": {
+          "points": 450,
+          "prevPoints": 375,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": {
+              "id": 1438,
+              "codewarsId": "5c3f31c2460e9b4020780aa2",
+              "fastestSolution": false,
+              "points": 5,
+              "completedAt": "2024-06-03T09:16:26.601Z",
+              "task": {
+                "id": "5c3f31c2460e9b4020780aa2",
+                "name": "Recaman Sequence",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 5,
+                "fastestSolution": null
+              }
+            },
+            "5bc027fccd4ec86c840000b7": {
+              "id": 1440,
+              "codewarsId": "5bc027fccd4ec86c840000b7",
+              "fastestSolution": false,
+              "points": 10,
+              "completedAt": "2024-06-03T10:00:25.114Z",
+              "task": {
+                "id": "5bc027fccd4ec86c840000b7",
+                "name": "Simple sum of pairs",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 10,
+                "fastestSolution": null
+              }
+            },
+            "661c2aacefc32821ecde863c": {
+              "id": 1445,
+              "codewarsId": "661c2aacefc32821ecde863c",
+              "fastestSolution": false,
+              "points": 15,
+              "completedAt": "2024-06-03T11:04:52.866Z",
+              "task": {
+                "id": "661c2aacefc32821ecde863c",
+                "name": "Iterator.tee",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 15,
+                "fastestSolution": null
+              }
+            },
+            "654cdf611d68c91228af27f1": {
+              "id": 1453,
+              "codewarsId": "654cdf611d68c91228af27f1",
+              "fastestSolution": false,
+              "points": 20,
+              "completedAt": "2024-06-03T13:49:19.381Z",
+              "task": {
+                "id": "654cdf611d68c91228af27f1",
+                "name": "Elevator Action!",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 20,
+                "fastestSolution": null
+              }
+            },
+            "63b71bc0834251098ca84b05": {
+              "id": 1468,
+              "codewarsId": "63b71bc0834251098ca84b05",
+              "fastestSolution": false,
+              "points": 25,
+              "completedAt": "2024-06-04T14:30:33.914Z",
+              "task": {
+                "id": "63b71bc0834251098ca84b05",
+                "name": "Flood Room",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 25,
+                "fastestSolution": null
+              }
+            }
+          }
+        }
+      },
+      {
+        "firstName": "Katsiaryna",
+        "lastName": "Matsveyeva",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/?tab=profile&category=all",
+        "codewarsUsername": "KathrineMatveeva",
+        "solutions": {
+          "points": 15,
+          "prevPoints": 15,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Viktoriia",
+        "lastName": "Fedotkina",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Viktoriia_Fedotkina",
+        "codewarsUsername": "victoria-f",
+        "solutions": {
+          "points": 15,
+          "prevPoints": 15,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Denis",
+        "lastName": "Beskorovainyi",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Denis_Beskorovainyi",
+        "codewarsUsername": "bdvx",
+        "solutions": {
+          "points": 450,
+          "prevPoints": 375,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": {
+              "id": 1478,
+              "codewarsId": "5c3f31c2460e9b4020780aa2",
+              "fastestSolution": false,
+              "points": 5,
+              "completedAt": "2024-06-05T11:55:30.522Z",
+              "task": {
+                "id": "5c3f31c2460e9b4020780aa2",
+                "name": "Recaman Sequence",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 5,
+                "fastestSolution": null
+              }
+            },
+            "5bc027fccd4ec86c840000b7": {
+              "id": 1479,
+              "codewarsId": "5bc027fccd4ec86c840000b7",
+              "fastestSolution": false,
+              "points": 10,
+              "completedAt": "2024-06-05T15:50:31.158Z",
+              "task": {
+                "id": "5bc027fccd4ec86c840000b7",
+                "name": "Simple sum of pairs",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 10,
+                "fastestSolution": null
+              }
+            },
+            "661c2aacefc32821ecde863c": {
+              "id": 1491,
+              "codewarsId": "661c2aacefc32821ecde863c",
+              "fastestSolution": false,
+              "points": 15,
+              "completedAt": "2024-06-06T20:44:29.680Z",
+              "task": {
+                "id": "661c2aacefc32821ecde863c",
+                "name": "Iterator.tee",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 15,
+                "fastestSolution": null
+              }
+            },
+            "654cdf611d68c91228af27f1": {
+              "id": 1503,
+              "codewarsId": "654cdf611d68c91228af27f1",
+              "fastestSolution": false,
+              "points": 20,
+              "completedAt": "2024-06-09T17:57:23.568Z",
+              "task": {
+                "id": "654cdf611d68c91228af27f1",
+                "name": "Elevator Action!",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 20,
+                "fastestSolution": null
+              }
+            },
+            "63b71bc0834251098ca84b05": {
+              "id": 1497,
+              "codewarsId": "63b71bc0834251098ca84b05",
+              "fastestSolution": false,
+              "points": 25,
+              "completedAt": "2024-06-08T21:09:35.995Z",
+              "task": {
+                "id": "63b71bc0834251098ca84b05",
+                "name": "Flood Room",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 25,
+                "fastestSolution": null
+              }
+            }
+          }
+        }
+      },
+      {
+        "firstName": "Dmitrii",
+        "lastName": "Gutkovskii",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Dmitrii_Gutkovskii",
+        "codewarsUsername": "femiarkh",
+        "solutions": {
+          "points": 330,
+          "prevPoints": 280,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": {
+              "id": 1490,
+              "codewarsId": "5c3f31c2460e9b4020780aa2",
+              "fastestSolution": false,
+              "points": 5,
+              "completedAt": "2024-06-06T19:17:42.877Z",
+              "task": {
+                "id": "5c3f31c2460e9b4020780aa2",
+                "name": "Recaman Sequence",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 5,
+                "fastestSolution": null
+              }
+            },
+            "5bc027fccd4ec86c840000b7": {
+              "id": 1493,
+              "codewarsId": "5bc027fccd4ec86c840000b7",
+              "fastestSolution": false,
+              "points": 10,
+              "completedAt": "2024-06-07T17:50:55.489Z",
+              "task": {
+                "id": "5bc027fccd4ec86c840000b7",
+                "name": "Simple sum of pairs",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 10,
+                "fastestSolution": null
+              }
+            },
+            "661c2aacefc32821ecde863c": {
+              "id": 1495,
+              "codewarsId": "661c2aacefc32821ecde863c",
+              "fastestSolution": false,
+              "points": 15,
+              "completedAt": "2024-06-08T15:35:00.274Z",
+              "task": {
+                "id": "661c2aacefc32821ecde863c",
+                "name": "Iterator.tee",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 15,
+                "fastestSolution": null
+              }
+            },
+            "654cdf611d68c91228af27f1": {
+              "id": 1437,
+              "codewarsId": "654cdf611d68c91228af27f1",
+              "fastestSolution": false,
+              "points": 20,
+              "completedAt": "2024-03-12T19:28:57.396Z",
+              "task": {
+                "id": "654cdf611d68c91228af27f1",
+                "name": "Elevator Action!",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 20,
+                "fastestSolution": null
+              }
+            },
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Andrii",
+        "lastName": "Hordynskyi",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/key/upsaId/4060741400381088971",
+        "codewarsUsername": "hordynsky",
+        "solutions": {
+          "points": 155,
+          "prevPoints": 155,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Azamat",
+        "lastName": "Tikenov",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Azamat_Tikenov",
+        "codewarsUsername": "tikenov",
+        "solutions": {
+          "points": 45,
+          "prevPoints": 45,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Dazik",
+        "lastName": "Akbarov",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Saidazizkhon_Akbarov?tab=profile",
+        "codewarsUsername": "dazik",
+        "solutions": {
+          "points": 30,
+          "prevPoints": 30,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Vadim",
+        "lastName": "Hardzenia",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Vadzim_Hardzenia",
+        "codewarsUsername": "vadimgordenya",
+        "solutions": {
+          "points": 20,
+          "prevPoints": 20,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Roman",
+        "lastName": "Bakovskyi",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Roman%20Bakovskyi?tab=profile",
+        "codewarsUsername": "Govan0",
+        "solutions": {
+          "points": 30,
+          "prevPoints": 30,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Yekaterina",
+        "lastName": "Zhunusbayeva",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Yekaterina%20Zhunusbayeva?tab=profile",
+        "codewarsUsername": "kate_89",
+        "solutions": {
+          "points": 15,
+          "prevPoints": 15,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Andrei",
+        "lastName": "Tsiarnouski",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Andrei_Tsiarnouski",
+        "codewarsUsername": "Zagula",
+        "solutions": {
+          "points": 280,
+          "prevPoints": 280,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Roman",
+        "lastName": "Gruntovich",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Roman_Gruntovich",
+        "codewarsUsername": "g-roman",
+        "solutions": {
+          "points": 205,
+          "prevPoints": 190,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": {
+              "id": 1439,
+              "codewarsId": "5c3f31c2460e9b4020780aa2",
+              "fastestSolution": false,
+              "points": 5,
+              "completedAt": "2024-06-03T09:29:23.745Z",
+              "task": {
+                "id": "5c3f31c2460e9b4020780aa2",
+                "name": "Recaman Sequence",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 5,
+                "fastestSolution": null
+              }
+            },
+            "5bc027fccd4ec86c840000b7": {
+              "id": 1489,
+              "codewarsId": "5bc027fccd4ec86c840000b7",
+              "fastestSolution": false,
+              "points": 10,
+              "completedAt": "2024-06-06T16:15:20.712Z",
+              "task": {
+                "id": "5bc027fccd4ec86c840000b7",
+                "name": "Simple sum of pairs",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 10,
+                "fastestSolution": null
+              }
+            },
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Vilmos",
+        "lastName": "Lázár",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Vilmos_Lazar?tab=cv",
+        "codewarsUsername": "vilmos_lazar97",
+        "solutions": {
+          "points": 5,
+          "prevPoints": 5,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Aleksei",
+        "lastName": "Vasiliev",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Aleksei_Vasiliev",
+        "codewarsUsername": "AlekseyVY",
+        "solutions": {
+          "points": 30,
+          "prevPoints": 30,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Nicholas",
+        "lastName": "Taylor",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Nicholas_Taylor",
+        "codewarsUsername": "nicholasTaylor1",
+        "solutions": {
+          "points": 15,
+          "prevPoints": 15,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Viktoryis",
+        "lastName": "Butrym",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Viktoryia_Butrym?tab=profile",
+        "codewarsUsername": "_VB_",
+        "solutions": {
+          "points": 5,
+          "prevPoints": 5,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Vasily",
+        "lastName": ".",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Vasily_Gusev",
+        "codewarsUsername": "Guseff",
+        "solutions": {
+          "points": 185,
+          "prevPoints": 185,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Dmitrii",
+        "lastName": "Pleshanov",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Dmitrii_Pleshanov",
+        "codewarsUsername": "m1t9",
+        "solutions": {
+          "points": 125,
+          "prevPoints": 120,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": {
+              "id": 1475,
+              "codewarsId": "5c3f31c2460e9b4020780aa2",
+              "fastestSolution": false,
+              "points": 5,
+              "completedAt": "2024-06-05T09:33:03.327Z",
+              "task": {
+                "id": "5c3f31c2460e9b4020780aa2",
+                "name": "Recaman Sequence",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 5,
+                "fastestSolution": null
+              }
+            },
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Akshay",
+        "lastName": "Kapoor",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Akshay_Kapoor",
+        "codewarsUsername": "tHe_AK",
+        "solutions": {
+          "points": 15,
+          "prevPoints": 15,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Zsolt",
+        "lastName": "Kakuk",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Zsolt_Kakuk",
+        "codewarsUsername": "kakukzs",
+        "solutions": {
+          "points": 330,
+          "prevPoints": 300,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": {
+              "id": 1452,
+              "codewarsId": "5c3f31c2460e9b4020780aa2",
+              "fastestSolution": false,
+              "points": 5,
+              "completedAt": "2024-06-03T13:35:35.580Z",
+              "task": {
+                "id": "5c3f31c2460e9b4020780aa2",
+                "name": "Recaman Sequence",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 5,
+                "fastestSolution": null
+              }
+            },
+            "5bc027fccd4ec86c840000b7": {
+              "id": 1469,
+              "codewarsId": "5bc027fccd4ec86c840000b7",
+              "fastestSolution": false,
+              "points": 10,
+              "completedAt": "2024-06-04T15:09:47.403Z",
+              "task": {
+                "id": "5bc027fccd4ec86c840000b7",
+                "name": "Simple sum of pairs",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 10,
+                "fastestSolution": null
+              }
+            },
+            "661c2aacefc32821ecde863c": {
+              "id": 1463,
+              "codewarsId": "661c2aacefc32821ecde863c",
+              "fastestSolution": false,
+              "points": 15,
+              "completedAt": "2024-06-04T09:11:45.633Z",
+              "task": {
+                "id": "661c2aacefc32821ecde863c",
+                "name": "Iterator.tee",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 15,
+                "fastestSolution": null
+              }
+            },
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Mostafa",
+        "lastName": "Zaki",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/mostafa_zaki",
+        "codewarsUsername": "mostafazke",
+        "solutions": {
+          "points": 5,
+          "prevPoints": 5,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Mariia",
+        "lastName": "Rohach",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Mariia_Rohach?tab=profile",
+        "codewarsUsername": "mn788",
+        "solutions": {
+          "points": 35,
+          "prevPoints": 35,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Aleksey",
+        "lastName": "Kulagin",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/key/8760000000000006538?tab=profile",
+        "codewarsUsername": "alQlagin",
+        "solutions": {
+          "points": 25,
+          "prevPoints": 25,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Siarhei",
+        "lastName": "Baranenkau",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Siarhei_Baranenkau",
+        "codewarsUsername": "cup0ra",
+        "solutions": {
+          "points": 25,
+          "prevPoints": 25,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Yana",
+        "lastName": "Bashtyk",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Yana_Bashtyk",
+        "codewarsUsername": "Yana-Bashtyk",
+        "solutions": {
+          "points": 25,
+          "prevPoints": 25,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Uladzimir",
+        "lastName": "Atroshchanka",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Uladzimir_Atroshchanka",
+        "codewarsUsername": "uladzimir_a",
+        "solutions": {
+          "points": 15,
+          "prevPoints": 15,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Aleksandr",
+        "lastName": "Dzyubinskiy",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Aleksandr_Dzyubinskiy",
+        "codewarsUsername": "XanDrDz",
+        "solutions": {
+          "points": 10,
+          "prevPoints": 10,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Alex",
+        "lastName": "Tamashevich",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Aliaksei_Tamashevich?tab=profile",
+        "codewarsUsername": "lexBogos",
+        "solutions": {
+          "points": 25,
+          "prevPoints": 25,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Sahil",
+        "lastName": "Shikalgar",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Sahil_Shikalgar?tab=profile",
+        "codewarsUsername": "sahil1504001",
+        "solutions": {
+          "points": 15,
+          "prevPoints": 15,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Yahor",
+        "lastName": "Barysevich",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Yahor_Barysevich",
+        "codewarsUsername": "picassonk21",
+        "solutions": {
+          "points": 10,
+          "prevPoints": 10,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Aleksei",
+        "lastName": "Ovchinnikov",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/aleksei_ovchinnikov?tab=profile",
+        "codewarsUsername": "rsschool_c39eebb60f0fca65",
+        "solutions": {
+          "points": 45,
+          "prevPoints": 45,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Andrei",
+        "lastName": "Mordasov",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Andrei_Mordasov",
+        "codewarsUsername": "andrei%20mordasov",
+        "solutions": {
+          "points": 15,
+          "prevPoints": 15,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Vaibhav",
+        "lastName": "Mishra",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Vaibhav_Mishra",
+        "codewarsUsername": "Vaibhav_Mishra",
+        "solutions": {
+          "points": 25,
+          "prevPoints": 25,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Nataliia",
+        "lastName": "Tolokontseva",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Nataliia_Tolokontseva",
+        "codewarsUsername": "hhharmEpm",
+        "solutions": {
+          "points": 105,
+          "prevPoints": 105,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Sergey",
+        "lastName": "Shulzhenko",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Sergey_Shulzhenko",
+        "codewarsUsername": "sshulzhenko",
+        "solutions": {
+          "points": 25,
+          "prevPoints": 25,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Subbalakshmi",
+        "lastName": "Meenakshisundaram",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/subbalakshmi_meenakshisundaram",
+        "codewarsUsername": "msubba",
+        "solutions": {
+          "points": 5,
+          "prevPoints": 5,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Davit",
+        "lastName": "Mamulashvili",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Davit_Mamulashvili",
+        "codewarsUsername": "dav1t",
+        "solutions": {
+          "points": 15,
+          "prevPoints": 15,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Maksim",
+        "lastName": "Shylau",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Maksim_Shylau",
+        "codewarsUsername": "BoringUsername",
+        "solutions": {
+          "points": 25,
+          "prevPoints": 25,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Viktor",
+        "lastName": "Soroka",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Viktor_Soroka",
+        "codewarsUsername": "ViktorSoroka",
+        "solutions": {
+          "points": 60,
+          "prevPoints": 60,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Jozsef",
+        "lastName": "Mezosi",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Jozsef_Mezosi",
+        "codewarsUsername": "mezosijozsef",
+        "solutions": {
+          "points": 30,
+          "prevPoints": 30,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Anastasiya",
+        "lastName": "Sadouskaya",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Anastasiya_Sadouskaya",
+        "codewarsUsername": "anastasiya-sadovskaya",
+        "solutions": {
+          "points": 150,
+          "prevPoints": 145,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": {
+              "id": 1458,
+              "codewarsId": "5c3f31c2460e9b4020780aa2",
+              "fastestSolution": false,
+              "points": 5,
+              "completedAt": "2024-06-03T19:45:23.030Z",
+              "task": {
+                "id": "5c3f31c2460e9b4020780aa2",
+                "name": "Recaman Sequence",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 5,
+                "fastestSolution": null
+              }
+            },
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Aliaksei",
+        "lastName": "Makas",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Aliaksei_Makas",
+        "codewarsUsername": "Muskos",
+        "solutions": {
+          "points": 85,
+          "prevPoints": 80,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": {
+              "id": 1441,
+              "codewarsId": "5c3f31c2460e9b4020780aa2",
+              "fastestSolution": false,
+              "points": 5,
+              "completedAt": "2024-06-03T10:25:21.630Z",
+              "task": {
+                "id": "5c3f31c2460e9b4020780aa2",
+                "name": "Recaman Sequence",
+                "completedAt": null,
+                "completedLanguages": null,
+                "points": 5,
+                "fastestSolution": null
+              }
+            },
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Dmytro",
+        "lastName": "Teslia",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Dmytro_Teslia",
+        "codewarsUsername": "dellirom",
+        "solutions": {
+          "points": 5,
+          "prevPoints": 5,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Tetiana",
+        "lastName": "Stepova",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/Tetiana_Stepova",
+        "codewarsUsername": "tetianastepova",
+        "solutions": {
+          "points": 55,
+          "prevPoints": 55,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      },
+      {
+        "firstName": "Jasurbek",
+        "lastName": "Berdikulov",
+        "photo": null,
+        "telescopeLink": "https://telescope.epam.com/who/key/upsaId/8760000000000390980?tab=profile",
+        "codewarsUsername": "jasurbekberdiqulov",
+        "solutions": {
+          "points": 5,
+          "prevPoints": 5,
+          "tasks": {
+            "5c3f31c2460e9b4020780aa2": null,
+            "5bc027fccd4ec86c840000b7": null,
+            "661c2aacefc32821ecde863c": null,
+            "654cdf611d68c91228af27f1": null,
+            "63b71bc0834251098ca84b05": null
+          }
+        }
+      }
+    ]
+  }
+}

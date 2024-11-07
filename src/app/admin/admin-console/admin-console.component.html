@@ -21,7 +21,7 @@
             </h4>
             <div class="col-3">
               <div ngbDropdown class="d-inline-block float-end" placement="bottom-end">
-                <button type="button" class="btn btn-secondary" id="dropdownRun" ngbDropdownToggle>
+                <button type="button" class="btn" id="dropdownRun" ngbDropdownToggle>
                   {{currentRun.description}}
                 </button>
                 <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdownRun">
@@ -95,7 +95,7 @@
               </td>
               <td class="centered-column">
                 <button *ngIf="newTaskIdVisible" [disabled]="!newTaskId || !newTaskPoints"
-                        type="button" class="btn btn-secondary create-btn" ngbTooltip="Create task"
+                        type="button" class="btn create-btn" ngbTooltip="Create task"
                         placement="top" (click)="createTask()">
                   <i class="bi bi-check-square"></i>
                 </button>

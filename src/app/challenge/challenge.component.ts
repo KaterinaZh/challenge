@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, HostListener, OnInit} from '@angular/core';
 import {LeaderboardService} from "../services/leaderboard.service";
 import {Task} from "../models/task.model";
 import {Router} from "@angular/router";
@@ -61,6 +61,7 @@ export class ChallengeComponent implements OnInit {
   public futureRunStart: Date;
   public noCurrentRun: boolean;
   public remainingTime: Observable<TimeComponents>;
+  public isTopOfPage: boolean;
 
   constructor(
     private leaderboardService: LeaderboardService,
@@ -95,8 +96,10 @@ export class ChallengeComponent implements OnInit {
     this.loadLeaderboard(run.id, run.tasks || []);
   }
 
-  public isTopOfPage() {
-    return window.scrollY == 0;
+  @HostListener('window:scroll', ['$event'])
+  onWindowsScroll() {
+    const scrollTop = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop;
+    this.isTopOfPage = scrollTop <= 50;
   }
 
   private loadLeaderboard(runId: number, tasks: Task[]) {

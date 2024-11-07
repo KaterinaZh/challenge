@@ -1,0 +1,332 @@
+{
+  "runs": [
+    {
+      "id": 29,
+      "run_start_date": "2024-05-27T09:00:00.000Z",
+      "run_end_date": "2024-06-03T09:00:00.000Z",
+      "leaderboardUpdatedDate": "2024-06-03T08:59:59.978Z",
+      "tasks": [
+        {
+          "id": "5ab363ff6a176b29880000dd",
+          "name": "Hex Hash Sum",
+          "completedAt": null,
+          "completedLanguages": null,
+          "points": 5,
+          "fastestSolution": null
+        },
+        {
+          "id": "58ade2233c9736b01d0000b3",
+          "name": "Password generator",
+          "completedAt": null,
+          "completedLanguages": null,
+          "points": 10,
+          "fastestSolution": null
+        },
+        {
+          "id": "57f14afa5f2f226d7d0000f4",
+          "name": "Simple Encryption #4 - Qwerty",
+          "completedAt": null,
+          "completedLanguages": null,
+          "points": 15,
+          "fastestSolution": null
+        },
+        {
+          "id": "5bbe26c718ea5d2ffa0000a2",
+          "name": "Tap Into Mr. Mxyzinjin's Toy Safe",
+          "completedAt": null,
+          "completedLanguages": null,
+          "points": 20,
+          "fastestSolution": null
+        },
+        {
+          "id": "54d558c72a5e542c0600060f",
+          "name": "Defuse the bombs!",
+          "completedAt": null,
+          "completedLanguages": null,
+          "points": 25,
+          "fastestSolution": null
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "run_start_date": "2024-05-20T09:00:00.000Z",
+      "run_end_date": "2024-05-27T09:00:00.000Z",
+      "leaderboardUpdatedDate": "2024-05-27T08:59:45.165Z",
+      "tasks": [
+        {
+          "id": "56ae72854d005c7447000023",
+          "name": "Simple template",
+          "completedAt": null,
+          "completedLanguages": null,
+          "points": 5,
+          "fastestSolution": null
+        },
+        {
+          "id": "58397ee871df657929000209",
+          "name": "Acronym Buster",
+          "completedAt": null,
+          "completedLanguages": null,
+          "points": 10,
+          "fastestSolution": null
+        },
+        {
+          "id": "548db0bd1df5bbf29b0000b7",
+          "name": "validDate Regex",
+          "completedAt": null,
+          "completedLanguages": null,
+          "points": 15,
+          "fastestSolution": null
+        },
+        {
+          "id": "52fa7b5704bc8f7c85000d32",
+          "name": "String indexOf (and lastIndexOf) with regex",
+          "completedAt": null,
+          "completedLanguages": null,
+          "points": 20,
+          "fastestSolution": null
+        },
+        {
+          "id": "63c05c1aeffe877458a15994",
+          "name": "Multiplying Polynomials",
+          "completedAt": null,
+          "completedLanguages": null,
+          "points": 25,
+          "fastestSolution": null
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "run_start_date": "2024-05-13T09:00:00.000Z",
+      "run_end_date": "2024-05-20T09:00:00.000Z",
+      "leaderboardUpdatedDate": "2024-05-20T08:59:38.090Z",
+      "tasks": [
+        {
+          "id": "560fbc2d636966b21e00009e",
+          "name": "Map function  issue",
+          "completedAt": null,
+          "completedLanguages": null,
+          "points": 5,
+          "fastestSolution": null
+        },
+        {
+          "id": "5655c60db4c2ce0c2e000026",
+          "name": "Function composition",
+          "completedAt": null,
+          "completedLanguages": null,
+          "points": 10,
+          "fastestSolution": null
+        },
+        {
+          "id": "539a0e4d85e3425cb0000a88",
+          "name": "A Chain adding function",
+          "completedAt": null,
+          "completedLanguages": null,
+          "points": 15,
+          "fastestSolution": null
+        },
+        {
+          "id": "53cf7e37e9876c35a60002c9",
+          "name": "Currying vs. Partial Application",
+          "completedAt": null,
+          "completedLanguages": null,
+          "points": 20,
+          "fastestSolution": null
+        },
+        {
+          "id": "53c29a6abb5187180d000b65",
+          "name": "ES5 Generators(i)",
+          "completedAt": null,
+          "completedLanguages": null,
+          "points": 25,
+          "fastestSolution": null
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "run_start_date": "2024-05-06T09:00:00.000Z",
+      "run_end_date": "2024-05-13T09:00:00.000Z",
+      "leaderboardUpdatedDate": "2024-05-13T08:59:14.703Z",
+      "tasks": [
+        {
+          "id": "6089c7992df556001253ba7d",
+          "name": "What a \"Classy\" Song",
+          "completedAt": null,
+          "completedLanguages": null,
+          "points": 5,
+          "fastestSolution": null
+        },
+        {
+          "id": "5bc7bb444be9774f100000c3",
+          "name": "Versions manager",
+          "completedAt": null,
+          "completedLanguages": null,
+          "points": 10,
+          "fastestSolution": null
+        },
+        {
+          "id": "58eb35b19925753a750000eb",
+          "name": "Simple Drawing Board",
+          "completedAt": null,
+          "completedLanguages": null,
+          "points": 15,
+          "fastestSolution": null
+        },
+        {
+          "id": "574d0b01b4b769b207000ca3",
+          "name": "Priori Incantatem",
+          "completedAt": null,
+          "completedLanguages": null,
+          "points": 20,
+          "fastestSolution": null
+        },
+        {
+          "id": "5a5db0f580eba84589000979",
+          "name": "Plants and Zombies",
+          "completedAt": null,
+          "completedLanguages": null,
+          "points": 25,
+          "fastestSolution": null
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "run_start_date": "2024-04-29T09:00:00.000Z",
+      "run_end_date": "2024-05-06T09:00:00.000Z",
+      "leaderboardUpdatedDate": "2024-05-06T08:58:44.375Z",
+      "tasks": [
+        {
+          "id": "5a5e4f5f118dd1b407000028",
+          "name": "Cantor's Diagonals",
+          "completedAt": null,
+          "completedLanguages": null,
+          "points": 5,
+          "fastestSolution": null
+        },
+        {
+          "id": "585b989c45376c73e30000d1",
+          "name": "Christmas Present Calculator",
+          "completedAt": null,
+          "completedLanguages": null,
+          "points": 10,
+          "fastestSolution": null
+        },
+        {
+          "id": "56e3cbb5a28956899400073f",
+          "name": "Maximum Subarray Sum II",
+          "completedAt": null,
+          "completedLanguages": null,
+          "points": 15,
+          "fastestSolution": null
+        },
+        {
+          "id": "55cf3b567fc0e02b0b00000b",
+          "name": "Getting along with Integer Partitions",
+          "completedAt": null,
+          "completedLanguages": null,
+          "points": 20,
+          "fastestSolution": null
+        },
+        {
+          "id": "58dea43ff98a7e2124000169",
+          "name": "Divide integers as strings",
+          "completedAt": null,
+          "completedLanguages": null,
+          "points": 25,
+          "fastestSolution": null
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "run_start_date": "2024-06-03T09:00:00.000Z",
+      "run_end_date": "2024-06-10T09:00:00.000Z",
+      "leaderboardUpdatedDate": "2024-06-10T09:00:07.898Z",
+      "tasks": [
+        {
+          "id": "5c3f31c2460e9b4020780aa2",
+          "name": "Recaman Sequence",
+          "completedAt": null,
+          "completedLanguages": null,
+          "points": 5,
+          "fastestSolution": null
+        },
+        {
+          "id": "5bc027fccd4ec86c840000b7",
+          "name": "Simple sum of pairs",
+          "completedAt": null,
+          "completedLanguages": null,
+          "points": 10,
+          "fastestSolution": null
+        },
+        {
+          "id": "661c2aacefc32821ecde863c",
+          "name": "Iterator.tee",
+          "completedAt": null,
+          "completedLanguages": null,
+          "points": 15,
+          "fastestSolution": null
+        },
+        {
+          "id": "654cdf611d68c91228af27f1",
+          "name": "Elevator Action!",
+          "completedAt": null,
+          "completedLanguages": null,
+          "points": 20,
+          "fastestSolution": null
+        },
+        {
+          "id": "63b71bc0834251098ca84b05",
+          "name": "Flood Room",
+          "completedAt": null,
+          "completedLanguages": null,
+          "points": 25,
+          "fastestSolution": null
+        },
+        {
+          "id": "5a5e4f5f118dd1b407000028",
+          "name": "Cantor's Diagonals",
+          "completedAt": null,
+          "completedLanguages": null,
+          "points": 5,
+          "fastestSolution": null
+        },
+        {
+          "id": "585b989c45376c73e30000d1",
+          "name": "Christmas Present Calculator",
+          "completedAt": null,
+          "completedLanguages": null,
+          "points": 10,
+          "fastestSolution": null
+        },
+        {
+          "id": "56e3cbb5a28956899400073f",
+          "name": "Maximum Subarray Sum II",
+          "completedAt": null,
+          "completedLanguages": null,
+          "points": 15,
+          "fastestSolution": null
+        },
+        {
+          "id": "55cf3b567fc0e02b0b00000b",
+          "name": "Getting along with Integer Partitions",
+          "completedAt": null,
+          "completedLanguages": null,
+          "points": 20,
+          "fastestSolution": null
+        },
+        {
+          "id": "58dea43ff98a7e2124000169",
+          "name": "Divide integers as strings",
+          "completedAt": null,
+          "completedLanguages": null,
+          "points": 25,
+          "fastestSolution": null
+        }
+      ]
+    }
+  ]
+}

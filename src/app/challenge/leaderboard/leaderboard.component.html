@@ -6,13 +6,13 @@
     <thead class="leaderboard-table-header">
     <tr>
       <th scope="col">Place</th>
-      <th scope="col"></th>
+      <th scope="col" class="table-sm-hidden"></th>
       <th scope="col" class="align-left">Name</th>
-      <th scope="col" class="align-left">Nickname</th>
-      <th *ngFor="let task of currentRun.tasks; let i = index">
+      <th scope="col" class="align-left table-sm-hidden">Nickname</th>
+      <th *ngFor="let task of currentRun.tasks; let i = index" class="table-tasks">
         Task {{i + 1}}
       </th>
-      <th scope="col" *ngIf="!isWeekBoard">Other weeks</th>
+      <th scope="col" *ngIf="!isWeekBoard" class="table-sm-hidden">Other weeks</th>
       <th scope="col">Total</th>
     </tr>
     </thead>
@@ -20,13 +20,13 @@
     <tr *ngFor="let user of leaderboard.users | slice:0:sliceEnd; let i = index"
         [ngClass]="{'place-1':i === 0, 'place-2':i === 1, 'place-3':i === 2}">
       <td>{{i + 1}}</td>
-      <td class="avatar-col">
-        <img src="/assets/avatars/default.jpg" alt="avatar">
+      <td class="avatar-col table-sm-hidden">
+        <img src="/assets/avatars/default.png" alt="avatar">
       </td>
       <td class="align-left">...</td>
-      <td class="align-left">...</td>
-      <td *ngFor="let task of user.tasks">-</td>
-      <td *ngIf="!isWeekBoard">0</td>
+      <td class="align-left table-sm-hidden">...</td>
+      <td *ngFor="let task of user.tasks" class="table-tasks">-</td>
+      <td *ngIf="!isWeekBoard" class="table-sm-hidden">0</td>
       <td>0</td>
     </tr>
     </tbody>
@@ -34,31 +34,30 @@
     <tbody class="leaderboard-table-body" *ngIf="!isLoading">
     <tr *ngFor="let user of leaderboard.users | slice:0:sliceEnd"
         [ngClass]="{'place-1':user.place === 1, 'place-2':user.place === 2, 'place-3':user.place === 3}">
-      <td>{{user.place}}</td>
-      <td class="avatar-col">
+      <td><span class="place-number">{{user.place}}</span></td>
+      <td class="avatar-col table-sm-hidden">
         <img src="/assets/avatars/{{user.codewarsUsername}}.jpg" alt="avatar"
-             onerror="this.src='/assets/avatars/default.jpg';">
+             onerror="this.src='/assets/avatars/default.png';">
       </td>
       <td class="align-left">
         <a target="_blank" rel="noreferrer"
            href="{{user.telescopeLink}}">{{user.firstName}} {{user.lastName}}</a>
       </td>
-      <td class="align-left">{{user.codewarsUsername}}</td>
-      <td *ngFor="let task of user.tasks">
+      <td class="align-left table-sm-hidden">{{user.codewarsUsername}}</td>
+      <td *ngFor="let task of user.tasks" class="table-tasks">
         {{task && task.points ? task.points : '-'}}
       </td>
-      <td *ngIf="!isWeekBoard">{{user.solutions.prevPoints}}</td>
+      <td *ngIf="!isWeekBoard" class="table-sm-hidden">{{user.solutions.prevPoints}}</td>
       <td>{{user.solutions.points}}</td>
     </tr>
     <tr class="empty-row" *ngIf="leaderboard.users.length === 0">
       <td></td>
-      <td colspan="9">No results found. Solve tasks and become first!</td>
+      <td colspan="14">No results found. Solve tasks and become first!</td>
       <td></td>
     </tr>
     </tbody>
   </table>
 
   <button *ngIf="leaderboard.users.length > 0 && sliceEnd < leaderboard.users.length"
-          type="button" class="btn btn-primary float-end" (click)="showAll()">Show all
-  </button>
+          type="button" class="btn float-end view-all-btn" (click)="showAll()"> <i class="bi bi-eye"></i> View all</button>
 </div>

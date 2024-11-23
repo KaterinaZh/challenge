@@ -35,13 +35,17 @@ export class LeaderboardService {
           'https://mrohitsingh.medium.com/top-10-javascript-algorithms-for-coding-challenges-8cbf258841a1'
         ]
       },
-      {name: 'Design patterns & Framework specific', links: [
-        'https://dev.to/jamesrweb/principles-of-functional-programming-4b7c',
-        'https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function',
-        'https://dev.to/biomathcode/composition-of-functions-178g',
-        'https://dev.to/sundarbadagala081/javascript-chaining-3h6g',
-        'https://javascript.info/currying-partials',
-        'https://javascript.info/generators'
+      {
+        name: 'Design patterns & Framework specific', links: [
+          'https://www.patterns.dev/',
+          'https://www.freecodecamp.org/news/javascript-design-patterns-explained/',
+          'https://dev.to/topefasasi/js-design-patterns-a-comprehensive-guide-h3m',
+          'https://www.toptal.com/javascript/comprehensive-guide-javascript-design-patterns',
+          'https://www.geeksforgeeks.org/javascript-design-patterns/',
+          'https://dev.to/walosha/dependency-injection-pattern-for-beginners-3nc4',
+          'https://angular.dev/',
+          'https://www.freecodecamp.org/news/how-to-handle-events-in-react-19/',
+          'https://react.dev/'
       ]},
       {
         name: 'Regular Expressions', links: [

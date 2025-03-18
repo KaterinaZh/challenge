@@ -18,21 +18,33 @@ export class LeaderboardService {
   private readonly weekNames: { name: string, links: string[] }[] =
     [
       {
-        name: 'Fundamentals',
-        links: ['https://javascript.info/first-steps',
-          'https://javascript.info/data-types',
-          'https://developer.mozilla.org/en-US/curriculum/core/javascript-fundamentals/',
-          'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures',
-          'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array'
-        ]
-      },
-      {
         name: 'Algorithms', links: [
           'https://www.geeksforgeeks.org/learn-algorithms-with-javascript-tutorial/',
           'https://www.freecodecamp.org/news/introduction-to-algorithms-with-javascript-examples/',
           'https://www.toptal.com/developers/sorting-algorithms',
           'https://www.bigocheatsheet.com/',
           'https://mrohitsingh.medium.com/top-10-javascript-algorithms-for-coding-challenges-8cbf258841a1'
+        ]
+      },
+      {
+        name: 'Puzzles', links: [
+
+        ]},
+      {
+        name: 'Mathematics', links: [
+          'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math',
+          'https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Math',
+          'https://www.geeksforgeeks.org/ackermann-function/',
+          'https://web.archive.org/web/20220614001843/https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-11.html#%_sec_1.2.4'
+        ]
+      },
+      {
+        name: 'Fundamentals',
+        links: ['https://javascript.info/first-steps',
+          'https://javascript.info/data-types',
+          'https://developer.mozilla.org/en-US/curriculum/core/javascript-fundamentals/',
+          'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures',
+          'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array'
         ]
       },
       {

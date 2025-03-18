@@ -13,7 +13,7 @@ type RegisterData = {
 })
 export class UserService {
 
-  private readonly HAS_REGISTERED = 'hasRegistered';
+  private readonly HAS_REGISTERED = 'hasRegisteredFlag';
   private readonly THEME = 'challenge-user-theme';
   private readonly REGISTER = '/api/register';
 
